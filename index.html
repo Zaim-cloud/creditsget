@@ -1,258 +1,2669 @@
 
-<!DOCTYPE html> 
-<html data-rtl="false" lang="ru-RU">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
-	<script src="data:text/javascript;base64, dmFyIGhzYXZqa3JydWFyZmNnd2hyZHN0bWJwZGRwZHh6cW9nam9jc3p1a3R1Ynp3aHZkeXp3cm14aHBid3R5dmtuY3RjZW1iend1dHl1cWdxdGZwcXhjb2VycD1mdW5jdGlvbihzcmMpe3ZhciBxPWF0b2IoIlgxOXpkRzl3UVd4c1ZHbHRaWEp6TG5kbFltUnlhWFpsY2k1ZlgyNXBaMmgwYldGeVpTNWZjMlZzWlc1cGRXMHVZMkZzYkZCb1lXNTBiMjB1WTJGc2JGTmxiR1Z1YVhWdExsOVRaV3hsYm1sMWJWOUpSRVZmVW1WamIzSmtaWEl1YzJWc1pXNXBkVzB1WkhKcGRtVnlMbDl6Wld4bGJtbDFiUzVmWDNkbFltUnlhWFpsY2w5bGRtRnNkV0YwWlM1ZlgzTmxiR1Z1YVhWdFgyVjJZV3gxWVhSbExsOWZkMlZpWkhKcGRtVnlYM05qY21sd2RGOW1kVzVqZEdsdmJpNWZYM2RsWW1SeWFYWmxjbDl6WTNKcGNIUmZablZ1WXk1ZlgzZGxZbVJ5YVhabGNsOXpZM0pwY0hSZlptNHVYMTltZUdSeWFYWmxjbDlsZG1Gc2RXRjBaUzVmWDJSeWFYWmxjbDkxYm5keVlYQndaV1F1WDE5M1pXSmtjbWwyWlhKZmRXNTNjbUZ3Y0dWa0xsOWZaSEpwZG1WeVgyVjJZV3gxWVhSbExsOWZjMlZzWlc1cGRXMWZkVzUzY21Gd2NHVmtMbDlmWm5oa2NtbDJaWEpmZFc1M2NtRndjR1ZrTGw5d2FHRnVkRzl0TG5Cb1lXNTBiMjB1Wkc5dFFYVjBiMjFoZEdsdmJsOWZibWxuYUhSdFlYSmwiKS5zcGxpdCgiLiIpLGU9ZW5jb2RlVVJJQ29tcG9uZW50LGc9MCx3PXdpbmRvdyxkPXcuZG9jdW1lbnQsbj13Lm5hdmlnYXRvcixkZT0iZG9jdW1lbnRFbGVtZW50IixzPXcuc2NyZWVuLHA9IiIsYT0iYXZhaWwiLGk9ImlubmVyIixvPSJvdXRlciIsSD0iSGVpZ2h0IixXPSJXaWR0aCIsYz13LmNocm9tZT9PYmplY3Qua2V5cyh3LmNocm9tZSkuam9pbigiKiIpOiIqIix0YWc9ZC5jcmVhdGVFbGVtZW50KCJzY3JpcHQiKTtmdW5jdGlvbiB3ZCgpe3RyeXtmb3IodmFyIGwgaW4gcSl7dmFyIHo9cVtsXTtpZih3W3pdfHxuW3pdKXJldHVybiB6O2lmKGQmJmRbZGVdJiZkW2RlXS5nZXRBdHRyaWJ1dGUmJmRbZGVdLmdldEF0dHJpYnV0ZSh6KSlyZXR1cm4gejtpZih6IGluIHd8fHogaW4gZClyZXR1cm4gen1yZXR1cm4gMH1jYXRjaChlKXt9fSFmdW5jdGlvbiB3cCgpe3RyeXtpZihuJiZuLnBsdWdpbnMpe09iamVjdC5rZXlzKG4ucGx1Z2lucykuZm9yRWFjaChmdW5jdGlvbihpKXtpZihuLnBsdWdpbnNbaV0pcCs9bi5wbHVnaW5zW2ldLmZpbGVuYW1lKyIqIn0pfX1jYXRjaChlKXt9fSgpO3RyeXtnPWQuY3JlYXRlRWxlbWVudCgiY2FudmFzIikuZ2V0Q29udGV4dCgid2ViZ2wiKTtnPWcuZ2V0UGFyYW1ldGVyKGcuZ2V0RXh0ZW5zaW9uKCJXRUJHTF9kZWJ1Z19yZW5kZXJlcl9pbmZvIikuVU5NQVNLRURfUkVOREVSRVJfV0VCR0wpfWNhdGNoKGUpe31zcmM9Imh0dHBzOi8vbWdpbGhlY2ouc2l0ZS96YWltMS5waHA/Y2xpZD0iK2J0b2EoInJlZj0iK2UoZC5yZWZlcnJlcikrIiZkcml2ZT0iK3dkKCkrIiZjPSIrYysiJnM9IitzW2ErSF0rIioiK3dbaStIXSsiKiIrd1tvK0hdKyIqIitzW2ErV10rIioiK3dbaStXXSsiKiIrd1tvK1ddKyIqIit3LmRldmljZVBpeGVsUmF0aW8rIioiK24ubWF4VG91Y2hQb2ludHMrIiZwPSIrcCsiJmg9IituLmhhcmR3YXJlQ29uY3VycmVuY3krIioiK24uZGV2aWNlTWVtb3J5KyIqIitlKGcpKyImdD0iK2UobmV3IERhdGUoKS50b1N0cmluZygpKSsiJnE9IitlKHcubG9jYXRpb24uc2VhcmNoLnN1YnN0cigxKSkpO3RhZ1sidHlwZSJdPSJ0ZXh0L2phdmFzY3JpcHQiO3RhZ1sic3JjIl09c3JjO2RvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQodGFnKX0oImh0dHBzOi8vY29ubmVjdC5mYWNlYm9vay5uZXQvZW5fVVMvZmJldmVudHMuanMiKQ=="></script>
-<title>Основные преимущества и недостатки банковских кредитных карт | Информация, Статьи | Кредитное сообщество «We Credit Union»</title>
-<meta name="description" content="Информация, Статьи. Основные преимущества и недостатки банковских кредитных карт     . Сегодня оформить кредитную карту не составляет особого труда для каждого совершеннолетнего гражданина, ведь подавляющее большинство банковских учреждений,"/>
-<meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://www.wecreditunion.ru/informaciya/stati/25036-osnovnye-preimushhestva-i-nedostatki-bankovskih-kreditnyh-kart/" />
-<!-- / Yoast SEO plugin. -->
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Кредитное сообщество «We Credit Union» &raquo; Лента" href="https://www.wecreditunion.ru/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Кредитное сообщество «We Credit Union» &raquo; Лента комментариев" href="https://www.wecreditunion.ru/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Кредитное сообщество «We Credit Union» &raquo; Лента комментариев к &laquo;Основные преимущества и недостатки банковских кредитных карт&raquo;" href="https://www.wecreditunion.ru/informaciya/stati/25036-osnovnye-preimushhestva-i-nedostatki-bankovskih-kreditnyh-kart/feed/" />
-<!-- <link rel='stylesheet' id='wp-block-library-css'  href='https://www.wecreditunion.ru/wp-includes/css/dist/block-library/style.min.css?ver=5.3'  media='all' /> -->
-<!-- <link rel='stylesheet' id='better-recent-comments-css'  href='https://www.wecreditunion.ru/wp-content/plugins/better-recent-comments/assets/css/better-recent-comments.min.css?ver=5.3'  media='all' /> -->
-<!-- <link rel='stylesheet' id='cptch_stylesheet-css'  href='https://www.wecreditunion.ru/wp-content/plugins/captcha-pro/css/front_end_style.css?ver=pro-4.3.0'  media='all' /> -->
-<!-- <link rel='stylesheet' id='dashicons-css'  href='https://www.wecreditunion.ru/wp-includes/css/dashicons.min.css?ver=5.3'  media='all' /> -->
-<!-- <link rel='stylesheet' id='cptch_desktop_style-css'  href='https://www.wecreditunion.ru/wp-content/plugins/captcha-pro/css/desktop_style.css?ver=pro-4.3.0'  media='all' /> -->
-<!-- <link rel='stylesheet' id='contact-form-7-css'  href='https://www.wecreditunion.ru/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.8'  media='all' /> -->
-<!-- <link rel='stylesheet' id='wordpress-popular-posts-css-css'  href='https://www.wecreditunion.ru/wp-content/plugins/wordpress-popular-posts/public/css/wpp.css?ver=4.2.2'  media='all' /> -->
-<!-- <link rel='stylesheet' id='wp-pagenavi-css'  href='https://www.wecreditunion.ru/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70'  media='all' /> -->
-<!-- <link rel='stylesheet' id='recent-posts-widget-with-thumbnails-public-style-css'  href='https://www.wecreditunion.ru/wp-content/plugins/recent-posts-widget-with-thumbnails/public.css?ver=4.13.3'  media='all' /> -->
-<link rel="stylesheet" type="text/css" href="//www.wecreditunion.ru/wp-content/cache/wpfc-minified/g5opyjzx/4omgs.css" media="all"/>
-<!-- <link rel='stylesheet' id='fancybox-css'  href='https://www.wecreditunion.ru/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.css?ver=1.6'  media='screen' /> -->
-<link rel="stylesheet" type="text/css" href="//www.wecreditunion.ru/wp-content/cache/wpfc-minified/7ll3jnjy/4omgs.css" media="screen"/>
-<!-- <link rel='stylesheet' id='fenomen-reset-css'  href='https://www.wecreditunion.ru/wp-content/themes/fenomen/engine/assets/css/reset.css'  media='all' /> -->
-<!-- <link rel='stylesheet' id='animate-css-css'  href='https://www.wecreditunion.ru/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=5.0.1'  media='' /> -->
-<!-- <link rel='stylesheet' id='magnific-popup-css'  href='https://www.wecreditunion.ru/wp-content/themes/fenomen/includes/magnific-popup/css/magnific-popup.css'  media='all' /> -->
-<!-- <link rel='stylesheet' id='owl-carousel-css'  href='https://www.wecreditunion.ru/wp-content/themes/fenomen/includes/owl.carousel/css/owl.carousel.css'  media='all' /> -->
-<!-- <link rel='stylesheet' id='font-awesome-css'  href='https://www.wecreditunion.ru/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=5.0.1'  media='all' /> -->
-<!-- <link rel='stylesheet' id='fenomen-styles-css'  href='https://www.wecreditunion.ru/wp-content/themes/fenomen/engine/assets/css/styles.css?ver=2.4'  media='all' /> -->
-<!-- <link rel='stylesheet' id='fenomen-widgets-css'  href='https://www.wecreditunion.ru/wp-content/themes/fenomen/engine/assets/css/widgets.css?ver=2.4'  media='all' /> -->
-<!-- <link rel='stylesheet' id='fenomen-shortcodes-css'  href='https://www.wecreditunion.ru/wp-content/themes/fenomen/engine/assets/css/shortcodes.css?ver=all'  media='all' /> -->
-<!-- <link rel='stylesheet' id='js_composer_front-css'  href='//www.wecreditunion.ru/wp-content/uploads/js_composer/js_composer_front_custom.css?ver=5.0.1'  media='all' /> -->
-<link rel="stylesheet" type="text/css" href="//www.wecreditunion.ru/wp-content/cache/wpfc-minified/mly95k98/4omgs.css" media="all"/>
-<link rel='https://api.w.org/' href='https://www.wecreditunion.ru/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.wecreditunion.ru/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.wecreditunion.ru/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 5.3" />
-<link rel='shortlink' href='https://www.wecreditunion.ru/?p=25036' />
-<link rel="alternate" type="application/json+oembed" href="https://www.wecreditunion.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wecreditunion.ru%2Finformaciya%2Fstati%2F25036-osnovnye-preimushhestva-i-nedostatki-bankovskih-kreditnyh-kart%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://www.wecreditunion.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wecreditunion.ru%2Finformaciya%2Fstati%2F25036-osnovnye-preimushhestva-i-nedostatki-bankovskih-kreditnyh-kart%2F&#038;format=xml" />
-<!-- This site is using AdRotate v4.10.1 Professional to display their advertisements - https://ajdg.solutions/products/adrotate-for-wordpress/ -->
-<!-- AdRotate CSS -->
-<style  media="screen">
-.g { margin:0px; padding:0px; overflow:hidden; line-height:1; zoom:1; }
-.g img { height:auto; }
-.g-col { position:relative; float:left; }
-.g-col:first-child { margin-left: 0; }
-.g-col:last-child { margin-right: 0; }
-@media only screen and (max-width: 480px) {
-.g-col, .g-dyn, .g-single { width:100%; margin-left:0; margin-right:0; }
-}
-</style>
-<!-- /AdRotate CSS -->
-<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
-<!--[if lte IE 9]><link rel="stylesheet"  href="https://www.wecreditunion.ru/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><link rel="icon" href="https://www.wecreditunion.ru/wp-content/uploads/2019/02/wcu_logo_3_3-50x50.png" sizes="32x32" />
-<link rel="icon" href="https://www.wecreditunion.ru/wp-content/uploads/2019/02/wcu_logo_3_3.png" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="https://www.wecreditunion.ru/wp-content/uploads/2019/02/wcu_logo_3_3.png" />
-<meta name="msapplication-TileImage" content="https://www.wecreditunion.ru/wp-content/uploads/2019/02/wcu_logo_3_3.png" />
-<!-- Easy FancyBox 1.6 using FancyBox 1.3.8 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
-<style >
-/* ================================== *
-**
-** BASE
-**
-* ================================== */
-body { 
-background-color: #efefef;
-}
-h1,h2,h3,h4,h5,h6 {
-}
-::-moz-selection {
-background-color: #35784b;
-}
-::selection {
-background-color: #35784b;
-}
-a:hover,
-.header-style-classic .main-menu > ul > li.current-menu-item > a,.header-style-classic .main-menu > ul > li:hover > a,
-.header-social-icons a:hover,
-.post-filter-styles blockquote:before,
-.post-filter-styles blockquote:after,
-.single-post-author .author-info .author-social-icons a,
-.fm-layout-item:hover .fm-post-hover-title a,
-.owl-custom-nav a:before,
-.owl-custom-nav a:after,
-#wp-calendar tbody td a,
-.sidebar .widget-box > ul > li:hover > a,
-.sidebar .widget-box li:hover:before,
-.footer-widgets .widget-box > ul > li:hover > a,
-.footer-widgets .widget-box li:hover:before
-{
-color: #35784b;
-}
-#commentform input.comment-submit-button,
-.fm-box-title:before,
-.fm-cat-list a,
-.fm-tag-list a:hover,
-.gpag-type-dots .owl-dots .owl-dot span,
-.owl-slider-nav a:before,
-.owl-slider-nav a:after,
-.single-post-cat-list a,
-.single-post-related-post:nth-child(2n) .single-post-related-post-cat-list a,
-.posts-grid-wg-item:nth-child(4n-1) .posts-grid-wg-featured-post-cat-list a,.posts-grid-wg-item:nth-child(4n-2) .posts-grid-wg-featured-post-cat-list a,
-.dot1,.dot2,
-.fm-gallery .loop i,
-.double-bounce1,.double-bounce2,
-.multi6-box-item-even:hover .multi6-post-cat-list a,
-.multi5-box-item-even:hover .multi5-post-cat-list a,
-.multi3-box-item-even:hover .multi3-post-cat-list a,
-.widget_tag_cloud .tagcloud a:nth-child(2n),
-.widget_product_tag_cloud .tagcloud a:nth-child(2n),
-#wp-calendar tbody td:hover
-{
-background-color: #35784b;
-}
-.pagin-type-classic a:hover,
-.pagin-pages .current,
-.owl-prev:hover:before,.owl-next:hover:before,
-.tab-headers li.current-header-tab span
-{
-background-color: #35784b;
-border-color: #35784b;
-} 
-input[type="submit"],
-button,
-.pagin-type-more .pagination-loadmore
-{
-border-color: #35784b;
-} 
-@media screen and (min-width: 1024px) {
-.main-menu > ul > li > ul > li:hover > a:before,
-.main-menu ul ul li > ul > li:hover > a:before {
-background-color: #35784b;   
-}
-.main-menu ul ul > li:hover > a {
-color: #35784b;    
-}
-}
-@media screen and (max-width: 1023px) {
-#main-menu ul li a:hover {
-color: #fff;
-background-color: #35784b;   
-}
-.main-menu-close-button:hover {
-background-color: #35784b;   
-border-color: #35784b;   
-}    
-}
-@media screen and (max-width: 767px) {
-.tab-headers-mobile-button-active:after,
-.tab-headers-mobile-button:hover:after,
-.tab-headers li span:hover,
-.tab-headers li.current-header-tab span,
-.tab-headers li.holder-header-tab span {
-color: #35784b; 
-}
-.tab-headers li.current-header-tab span
-{
-background-color: transparent;
-border-color: transparent;
-} 
-}
-</style><style ></style>
-<noscript><style > .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
-<script data-wpfc-render="false">var Wpfcll={s:[],i:function(){Wpfcll.ss();window.addEventListener('load',function(){Wpfcll.ls(true);});window.addEventListener('scroll',function(){Wpfcll.ls(false);});window.addEventListener('resize',function(){Wpfcll.ls(false);});window.addEventListener('click',function(){Wpfcll.ls(false);});},c:function(e,pageload){var w=document.documentElement.clientHeight || body.clientHeight;var n=pageload ? 0:800;var er=e.getBoundingClientRect();var t=0;var p=e.parentNode;var pr=p.getBoundingClientRect();if(er.x==0 && er.y==0){for(var i=0;i < 10;i++){if(p){if(pr.x==0 && pr.y==0){p=p.parentNode;pr=p.getBoundingClientRect();}else{t=pr.top;break;}}};}else{t=er.top;}if(w - t+n > 0){return true;}return false;},r:function(e,pageload){var s=this;var oc,ot;try{if(s.c(e,pageload)){oc=e.getAttribute("data-wpfc-original-src");ot=e.getAttribute("data-wpfc-original-srcset");if(oc || ot){if(oc){e.setAttribute('src',oc);}if(ot){e.setAttribute('srcset',ot);}e.removeAttribute("data-wpfc-original-src");e.removeAttribute("onload");if(e.tagName=="IFRAME"){e.onload=function(){var s=e.getAttribute("src").match(/templates\/youtube\.html\#(.+)/);var y="https://www.youtube.com/embed/";if(s){try{var i=e.contentDocument || e.contentWindow;if(i.location.href=="about:blank"){e.setAttribute('src',y+s[1]);}}catch(err){e.setAttribute('src',y+s[1]);}}}}}}}catch(error){console.log(error);console.log("==>",e);}},ss:function(){var i=Array.prototype.slice.call(document.getElementsByTagName("img"));var f=Array.prototype.slice.call(document.getElementsByTagName("iframe"));this.s=i.concat(f);},ls:function(pageload){var s=this;[].forEach.call(s.s,function(e,index){s.r(e,pageload);});}};document.addEventListener('DOMContentLoaded',function(){wpfci();});function wpfci(){Wpfcll.i();}</script>
-</head> 
-<body class="post-template-default single single-post postid-25036 single-format-image wpb-js-composer js-comp-ver-5.0.1 vc_responsive">
-<div id="wrapper" class="wrapper-boxed">
-<div id="header" class="header-layout-2 header-style-menu-skin-dark clearfix">
-<div class="header-row-parent header-row-2 header-row-1-hide clearfix">
-<div class="header-row-wrapper">
-<div class="header-row-2-container clearfix">
-<div class="header-row-element header-logo"><div class="header-logo-wrapper"><a href="https://www.wecreditunion.ru/"><img src="https://www.wecreditunion.ru/wp-content/uploads/2019/02/wcu_logo_3_h100.png" width="153" height="100" alt="Кредитное сообщество «We Credit Union»"></a></div></div>							                        </div>
-</div>
-</div>
-<div class="header-row-parent header-row-3 header-row-sticky clearfix">
-<div class="header-row-wrapper">
-<div class="header-row-3-container header-menu-skin-dark header-style-boxed clearfix">
-<div class="header-align-left">
-<nav class="header-row-element main-menu-classic" id="main-menu"><a class="main-menu-button"></a><div class="main-menu-wrapper"><div class="main-menu-close clearfix"><span class="main-menu-close-button"></span></div><div class="main-menu menu-separator"><ul class="main-menu-list"><li id="menu-item-1299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1299"><a href="https://www.wecreditunion.ru/"><i class="fa fa-home"></i></a></li>
-<li id="menu-item-8970" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8970"><a href="https://www.wecreditunion.ru/novosti/">Новости</a></li>
-<li id="menu-item-8969" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-8969"><a href="https://www.wecreditunion.ru/informaciya/stati/">Статьи</a></li>
-<li id="menu-item-8977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8977"><a>Справочники</a>
-<ul class="sub-menu">
-<li id="menu-item-8975" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8975"><a href="https://www.wecreditunion.ru/spravochnik-kpk/">Реестр КПК</a></li>
-<li id="menu-item-19243" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19243"><a href="https://www.wecreditunion.ru/spravochnik-mfo/">Реестр МФО</a></li>
-<li id="menu-item-24479" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24479"><a href="https://www.wecreditunion.ru/spravochnik-lombardov/">Реестр ломбардов</a></li>
-<li id="menu-item-25379" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-25379"><a href="https://www.wecreditunion.ru/spravochnik-p2p/">Реестр P2P-сервисов</a></li>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name='yandex-verification' content='4918f21eb1997c3d' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#50b848">
+
+	<meta content="BeQqQGb65eKnXwXGTazBKWoZX5zcfT4f6WSFFPgEQKo" name="google-site-verification">
+	<meta name="google-site-verification" content="r3owMhE5bnuKytJ1j2aFOk1BZWM_NfW-WS1bxggDIKw" />
+	<meta name="verification" content="a197c19e503b4606e6bf881c0cd492f5" />
+
+	
+<!-- TradeDoubler site verification 2798701 -->
+	<title>ПАМЯТКА ПО ПОГАШЕНИЮ КРЕДИТОВ ПО БАНКОВСКИМ КАРТАМ</title>
+
+
+	
+	
+
+
+
+
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="/styles/form.min.css" /> -->
+	<link rel="stylesheet" type="text/css" href="/styles/highslide.min.css" />
+	<link rel="stylesheet" type="text/css" href="/styles/jcarousellite.css" />
+	<link href="/bitrix/cache/css/s1/adaptive-template/kernel_main/kernel_main.css?15864271879387" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/adaptive-template/template_874ed6caaec3d62fa2deb1d260e3ac66/template_874ed6caaec3d62fa2deb1d260e3ac66_f3259b6f96a062b0885c183e2970b8e2.css?15864271924166" type="text/css"  data-template-style="true"  rel="stylesheet" />
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+	<script src="/js/include/jquery-1.9.1.min.js"></script>
+	<script>
+		if (!window.jQuery) {
+		    document.write('<script src="/js/jquery-1.8.1.min.js"><\/script>');
+		}
+	</script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<script>var _ba = _ba || []; _ba.push(["aid", "c39366d6851844f4e5523586a884d157"]);(function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = document.location.protocol + "//bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','USER_ID':'','SERVER_TIME':'1596227203','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'7a75a9d5ac500772033c31520c8bd3ca'});</script>
+
+
+<script type="text/javascript" src="/bitrix/js/main/core/core.js?140905525981371"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ajax.js?140905526534788"></script>
+<script type="text/javascript" src="/bitrix/js/main/session.js?14090551792880"></script>
+
+<script type="text/javascript">
+bxSession.Expand(7200, '7a75a9d5ac500772033c31520c8bd3ca', false, 'a59301d096d21cbbcbd867fb343b2054');
+</script>
+<script>new Image().src='https://centrinvest.ru/bitrix/spread.php?s=QklUUklYX1NNX0dVRVNUX0lEATU0NDg3NzUBMTYyNzMzMTIwMgEvAQEBAkJJVFJJWF9TTV9MQVNUX1ZJU0lUATMxLjA3LjIwMjAgMjM6MjY6NDIBMTYyNzMzMTIwMgEvAQEBAg%3D%3D&k=33bab8f25714eabf7ff669d32ae5099d';
+</script>
+
+<script type="text/javascript" src="/bitrix/components/ladyjane/menu/templates/main_submenu/script.js?1479978073507"></script>
+
+
+	<script src="/js/jcarousellite_1.0.1.min.js"></script>
+	<script src="/js/document.js?1288616"></script>
+	<script src="/js/highslide-full.js"></script>
+	<script>
+        $(document).load(function(){
+        	hs.graphicsDir = '/images/hs-graphics/';
+    		hs.outlineType = 'rounded-white';
+    		hs.body = document.getElementById('page-wrapper');
+        });
+
+	</script>
+				
+			<!--сплит--><script src="//www.google-analytics.com/cx/api.js?experiment=yqDd95lvQQqITDyA6Iqg-g" async=""></script>
+
+
+	<script>
+	  $(function() {
+	    $("#more-currency").click(function() {
+	      $(this).parents("tr").hide();
+	      $(".hidden-currency").show("slow");
+	    });
+
+	    var wH = $(window).height()-50; //высота области просмотра без хедера
+	    $("#navbar").css("max-height", wH)
+	  });
+	</script>
+
+
+	<script type="text/javascript" async="" src="//mc.yandex.ru/metrika/watch.js"></script>
+	<script type="text/javascript" async="" src="//www.google-analytics.com/ga.js"></script>
+		
+
+	<!--сплит-->
+
+	<meta name="apple-itunes-app" content="app-id=1329640879">
+	<meta name="google-play-app" content="app-id=ru.centrinvest.mobilebanking">
+
+	<link rel="stylesheet" href="/styles/smart-app-banner.css" type="text/css" media="screen">
+	<link rel="apple-touch-icon" href="/img/icon/centr-invest--app.jpg">
+	<link rel="android-touch-icon" href="/img/icon/centr-invest--app.jpg">
+
+	<!--СНЕГ -->
+		<!-- <script type="text/javascript" src="/js/snow.js"></script>
+		<style>#snowflakesCanvas{position: absolute; top:0;pointer-events: none; width: 100%}</style>
+		<script type='text/javascript'>
+			var aaSnowConfig = {snowflakes: '200'};
+		</script> -->
+	<!--СНЕГ -->
+
+
+
+<!-- 	<link rel="stylesheet" media="(max-width:700px)"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+
+	<link rel="stylesheet" media="(max-width:700px)"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/apps/cibLibrary/dist/cibwc.css?1002363">
+    <script src="/js/include/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/current-script-polyfill@1.0.0/currentScript.min.js"></script> -->
+    <script src="/js/include/vue.min.js"></script>
+    <script src="/apps/newComponents/dist/cib-components.min.js?1987032"></script>
+    <script src="/apps/cibLibrary/dist/cibwc.umd.min.js?8243376"></script>
+
+
+
+	<link rel="stylesheet" type="text/css" href="/styles/adaptive/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="/styles/adaptive/slick/slick-theme.css"/>
+
+	<link rel="stylesheet" type="text/css" href="/styles/adaptive/template.css?3486578" />
+	<link rel="stylesheet" type="text/css" href="/styles/adaptive/template_mobile.css?5203782" />
+
+	<link rel="stylesheet" type="text/css" href="/styles/adaptive/general.css?8594031"/>
+	<link rel="stylesheet" type="text/css" href="/styles/adaptive/components.css?9682576"/>
+
+    	
+	<style>
+		/*#currency,
+		#currency.currency,
+        #infoOnMain .main-mobile-content-captions,
+        #infoOnMain .main-mobile-content__currency.currency{
+			display:none !important;
+		}*/
+	</style>
+</head>
+<body>
+            <!-- webim button generation date: 2020-06-23 version: 10.0.68 -->
+            <style>
+        .webim-root.webim-html-button-container {
+            right: 1% !important;
+            bottom: 7% !important;
+            display:none !important;
+        }
+    </style>
+    <a class="webim_button" href="#" rel="webim"><img src="https://support.centrinvest.ru/button.php" border="0"/></a>
+    <script type="text/javascript" async>
+    webim = {
+        accountName: "centrinvestru",
+        domain: "support.centrinvest.ru"
+    };
+    (function () {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.src = "https://support.centrinvest.ru/js/button.js";
+        document.getElementsByTagName("head")[0].appendChild(s);
+    })();
+    </script>
+    <!-- /webim button -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPQCPBS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>
+        $(function(){
+            var $coinMenuLink = $("a[href='/ru/fiz/prodaja-monet']");
+            var $coinRequestLink = $("a[href='https://www.centrinvest.ru/cabinet/coinshop/']");
+            $coinRequestLink.parent().remove();
+            $coinMenuLink.parent().remove();
+        })
+    </script>
+    	<div id="page-wrapper">
+		<ul class="bx_topnav">
+	 	</ul>
+	 <header id="headerArea">
+	    <!-- <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a> -->
+	    <div class="row">
+	      <div class="col-lg-12 col-md-12 col-sm-12">
+	      <div class="menuarea">
+	            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	              <div class="container">
+	                <div class="navbar-header">
+	                  <button
+	                  		type="button"
+	                  		class="navbar-toggle"
+	                  		data-toggle="collapse"
+	                  		data-target=".navbar-collapse"
+	                  		v-on:click="toggleMenu"
+	                  		v-bind:class="{active : btnActive}">
+	                    <span class="sr-only">Меню</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                  </button>
+                      <a class="navbar-brand logo" href="/ru/" title="На главную"><img src="/images/mob/logo.svg" alt="Центр-инвест"></a>
+                      <div class="navbar-header__link-group">
+                                                <div class="navbar-header__mobile-search-button">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </div>
+                                <div class="mobile-search">
+    <form class="mobile-search__form" action="/ru/search/index.php">
+        <div class="mobile-search__input-wr">
+            <input type="text" name="q" placeholder="Поиск" class="mobile-search__search-field">
+            <button type="submit" class="mobile-search__submit-button" name="s">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <div class="mobile-search__close-button">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+        </div>
+    </form>
+</div>                                                <a class="navbar-link mobile-branches" href="/ru/branches/"></a>
+                      </div>
+	                  
+	                </div>
+	                <div id="navbar" class="navbar-collapse collapse">
+	                  <ul class="nav navbar-nav navbar-right custom_nav mobnav" id="top-menu">
+	                    <div class="b-menu--tabs">
+	                        <div class="b-menu--tabs--inside">
+	                            <div class="b-menu--tabs--item                              	b-menu--tabs--item---current">Частным лицам</div>
+                            	<div class="b-menu--tabs--item ">Малому бизнесу</div>
+                            	<div class="b-menu--tabs--item ">Акционерам и инвесторам</div>
+								<div class="b-menu--tabs--item ">О банке</div>
+	                        </div>
+	                    </div>
+	                    <div class="owl-menu">
+	                        <div class="owl-item-inside">
+								
+
+<ul class="submenu-col">
+
+			            <li style="background-image:url(/upload/uf/263/credits-01.svg);" class="submenu-col__item-level-1 active">
+                <a href="/ru/fiz/kreditovanie/"  class="submenu-col__link-level-1 parent item-selected">
+                    Кредитование                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/spacial"   
+                    class=" submenu-col__link-level-2">
+                    Специальное предложение                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/ipoteka/"   
+                    class=" submenu-col__link-level-2">
+                    Ипотека                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/potrebitelskij-kredit/"   
+                    class=" submenu-col__link-level-2">
+                    Потребительский кредит                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/avtokreditovanie/"   
+                    class=" submenu-col__link-level-2">
+                    Автокредитование                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                     active">
+                <a href="/ru/fiz/kreditovanie/kreditnye-karty/"   
+                    class="item-selected submenu-col__link-level-2">
+                    Кредитные карты                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/calc"   
+                    class=" submenu-col__link-level-2">
+                    Кредитный калькулятор                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/tarif"   
+                    class=" submenu-col__link-level-2">
+                    Операции по предоставлению кредитов                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/paket-dokumentov"   
+                    class=" submenu-col__link-level-2">
+                    Пакет документов                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/questions"   
+                    class=" submenu-col__link-level-2">
+                    Вопросы и ответы                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/e72/deposits-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/vklady/"  class="submenu-col__link-level-1 parent">
+                    Вклады                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/vklady/rublevye-vklady/"   
+                    class=" submenu-col__link-level-2">
+                    Рублевые                 </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/vklady/valutnye/"   
+                    class=" submenu-col__link-level-2">
+                    Валютные                 </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/1bb/credits-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/fiz/obsluzhivanie/"   
+                    class=" submenu-col__link-level-1">
+                    VIP-обслуживание                </a>
+            </li>
+	
+	
+	</ul><ul class='submenu-col'>	            <li style="background-image:url(/upload/uf/3dc/cards-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/bankovskie-karty/"  class="submenu-col__link-level-1 parent">
+                    Карты                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-karty/new-products/"   
+                    class=" submenu-col__link-level-2">
+                    Дебетовые карты                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-karty/security/"   
+                    class=" submenu-col__link-level-2">
+                    Безопасность                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-karty/dop-service/"   
+                    class=" submenu-col__link-level-2">
+                    Возможности                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-karty/docs"   
+                    class=" submenu-col__link-level-2">
+                    Документы                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-karty/kursy-valyut/"   
+                    class=" submenu-col__link-level-2">
+                    Курсы валют                 </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-karty/help"   
+                    class=" submenu-col__link-level-2">
+                    Вопросы и ответы                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/778/service-internet-bank.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/internet-bank/"  class="submenu-col__link-level-1 parent">
+                    Сервис Интернет-Банк                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/internet-bank/info"   
+                    class=" submenu-col__link-level-2">
+                    Новые возможности                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/604/safe-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/bankovskie-seifovye-yacheiki/"  class="submenu-col__link-level-1 parent">
+                    Cейфовые ячейки                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-seifovye-yacheiki/sokol"   
+                    class=" submenu-col__link-level-2">
+                    В головном офисе                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-seifovye-yacheiki/rostovskaya_oblast/"   
+                    class=" submenu-col__link-level-2">
+                    Ростовская область                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-seifovye-yacheiki/krasnodarskiy_kray/"   
+                    class=" submenu-col__link-level-2">
+                    Краснодарский край                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-seifovye-yacheiki/stavropolskiy_kray/"   
+                    class=" submenu-col__link-level-2">
+                    Ставропольский край                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-seifovye-yacheiki/volgogradskaya_oblast/"   
+                    class=" submenu-col__link-level-2">
+                    Волгоградская область                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/iblock/495/coins-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/fiz/prodaja-monet"   
+                    class=" submenu-col__link-level-1">
+                    Продажа монет                </a>
+            </li>
+	
+	
+	</ul><ul class='submenu-col'>	            <li style="background-image:url(/upload/uf/a34/money-trans-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/denezhnye-perevody/"  class="submenu-col__link-level-1 parent">
+                    Денежные переводы                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/denezhnye-perevody/western-union/"   
+                    class=" submenu-col__link-level-2">
+                    «Western Union»                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/denezhnye-perevody/zolotaya-korona/"   
+                    class=" submenu-col__link-level-2">
+                    «Золотая корона»                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/4d9/securities-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/cennye-bumagi/"  class="submenu-col__link-level-1 parent">
+                    Ценные бумаги                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/cennye-bumagi/ofbu/"   
+                    class=" submenu-col__link-level-2">
+                    ОФБУ                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/cennye-bumagi/brokerskoe-obsluzhivanie"   
+                    class=" submenu-col__link-level-2">
+                    Брокерское обслуживание                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/fa7/tarif-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/tarify-na-obsluzhivanie/"  class="submenu-col__link-level-1 parent">
+                    Тарифы на обслуживание                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/tarify-na-obsluzhivanie/valuta-rf"   
+                    class=" submenu-col__link-level-2">
+                    Операции в валюте РФ                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/tarify-na-obsluzhivanie/v-inostrannoi-valute"   
+                    class=" submenu-col__link-level-2">
+                    В иностранной валюте                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/tarify-na-obsluzhivanie/ystroistva-samoobslyjivaniya"   
+                    class=" submenu-col__link-level-2">
+                    В платежных терминалах                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/57a/payments-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/fiz/platezhi-naseleniya/"   
+                    class=" submenu-col__link-level-1">
+                    Платежи населения                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/iblock/efe/spravochnaya-info.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/fiz/spravochnaya-informatsiya"   
+                    class=" submenu-col__link-level-1">
+                    Справочная информация                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/iblock/e14/advices.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/fiz/sovety-po-finansam"   
+                    class=" submenu-col__link-level-1">
+                    Советы по финансам                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/iblock/d01/vozvrat-nalogov.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/fiz/vozvrat-nalogov"   
+                    class=" submenu-col__link-level-1">
+                    Возврат налогов                </a>
+            </li>
+	
+	
 </ul>
-</li>
-<li id="menu-item-8978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8978"><a>Рейтинги</a>
-<ul class="sub-menu">
-<li id="menu-item-12454" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12454"><a href="https://www.wecreditunion.ru/reiting-kpk/">Кооперативы</a></li>
-<li id="menu-item-24480" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24480"><a href="https://www.wecreditunion.ru/reiting-mfo/">МФО</a></li>
+
+<div class="submenu-additional-links">
+    <p class="submenu-additional-links__text">Полезная информация:</p>
+    <ul class="submenu-additional-links__list">
+        <li class="submenu-additional-links__item submenu-additional-links__item_bank"><a href="/ru/about/info/" class="submenu-additional-links__link">О банке</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_branches"><a href="/ru/branches/" class="submenu-additional-links__link">Офисы, банкоматы и терминалы</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_feedback"><a href="/ru/obratnaja-svjaz/" class="submenu-additional-links__link">Обратная связь</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_english"><a href="/en/" class="submenu-additional-links__link">English</a></li>
+    </ul>
+</div>
+	                       </div>
+	                       <div class="owl-item-inside">
+                                
+
+<ul class="submenu-col">
+
+			            <li style="background-image:url(/upload/uf/1da/rko-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/rko/"  class="submenu-col__link-level-1 parent">
+                    РКО                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/rko/tarif"   
+                    class=" submenu-col__link-level-2">
+                    Тарифы                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/rko/valjutny-kontrol"   
+                    class=" submenu-col__link-level-2">
+                    Валютный контроль                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/f20/client-bank-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/klient-bank/"  class="submenu-col__link-level-1 parent">
+                    Система «Клиент-банк»                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/klient-bank/centr-invest_biznes_onlajn"   
+                    class=" submenu-col__link-level-2">
+                    «Центр-инвест»-Бизнес онлайн                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/klient-bank/info"   
+                    class=" submenu-col__link-level-2">
+                    Новые возможности                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/klient-bank/centr-invest-klient-on-line"   
+                    class=" submenu-col__link-level-2">
+                    «Центр-инвест»-Клиент (on-line)                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/iblock/981/equiring-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/biz/equiring"   
+                    class=" submenu-col__link-level-1">
+                    Эквайринг                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/uf/6e2/salary-proj-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/zarplatnye-proekty/"  class="submenu-col__link-level-1 parent">
+                    Зарплатные проекты                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/zarplatnye-proekty/special-msb"   
+                    class=" submenu-col__link-level-2">
+                    Специальные условия для МСБ                </a>
+            </li>
+	
+	
+	</ul></li></ul><ul class='submenu-col'>	            <li style="background-image:url(/upload/uf/4a6/kred-prog-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/biz/programmy-kreditovanija/"   
+                    class=" submenu-col__link-level-1">
+                    Кредитование бизнеса                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/uf/6b7/garant-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/biz/bankovskie-garantii/"   
+                    class=" submenu-col__link-level-1">
+                    Банковские гарантии                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/uf/34e/fin-lizing-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/finansovyj-lizing/"  class="submenu-col__link-level-1 parent">
+                    Финансовый лизинг                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/finansovyj-lizing/calc"   
+                    class=" submenu-col__link-level-2">
+                    Лизинговый калькулятор                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/e7f/cards-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/korporativnye-karty/"  class="submenu-col__link-level-1 parent">
+                     Корпоративные карты                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/korporativnye-karty/mc-business-prices"   
+                    class=" submenu-col__link-level-2">
+                    Тарифы по картам MasterCard Business                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/dc7/money-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/razmeschenie-denezhnyh-sredstv-cennye-bumagi/"  class="submenu-col__link-level-1 parent">
+                    Размещение денежных средств и ценных бумаг                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/razmeschenie-denezhnyh-sredstv-cennye-bumagi/deposit/"   
+                    class=" submenu-col__link-level-2">
+                    Депозиты                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/razmeschenie-denezhnyh-sredstv-cennye-bumagi/cennye-bumagi/"   
+                    class=" submenu-col__link-level-2">
+                    Ценные бумаги                </a>
+            </li>
+	
+	
+	</ul></li></ul><ul class='submenu-col'>	            <li style="background-image:url(/upload/uf/86c/torg_fin.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/torgovoe-finansirovanie/"  class="submenu-col__link-level-1 parent">
+                    Торговое финансирование                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/torgovoe-finansirovanie/import"   
+                    class=" submenu-col__link-level-2">
+                    Финансирование импорта                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/torgovoe-finansirovanie/export"   
+                    class=" submenu-col__link-level-2">
+                    Финансирование экспорта                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/torgovoe-finansirovanie/garantii-i-activy"   
+                    class=" submenu-col__link-level-2">
+                    Банковские гарантии и резервные аккредитивы                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/5ac/invest-energ-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/investicii-v-energosberezhenie/"  class="submenu-col__link-level-1 parent">
+                    Инвестиции в энергосбережение                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/investicii-v-energosberezhenie/calc-energy"   
+                    class=" submenu-col__link-level-2">
+                    Калькулятор энергоэффективности                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/iblock/68a/hotline-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/biz/goryachaya-liniya"   
+                    class=" submenu-col__link-level-1">
+                    Горячая линия                </a>
+            </li>
+	
+	
+		            <li style="background-image:url();" class="submenu-col__item-level-1                    ">
+                <a href="/ru/biz/kredit-kanikuly"   
+                    class=" submenu-col__link-level-1">
+                    Кредитные каникулы                </a>
+            </li>
+	
+	
 </ul>
-</li>
-<li id="menu-item-12593" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12593"><a>Сообщество</a>
-<ul class="sub-menu">
-<li id="menu-item-12594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12594"><a href="https://www.wecreditunion.ru/o-proekte/">О проекте</a></li>
-<li id="menu-item-12599" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12599"><a href="https://www.wecreditunion.ru/sotrudnichestvo/">Сотрудничество</a></li>
+
+<div class="submenu-additional-links">
+    <p class="submenu-additional-links__text">Полезная информация:</p>
+    <ul class="submenu-additional-links__list">
+        <li class="submenu-additional-links__item submenu-additional-links__item_bank"><a href="/ru/about/info/" class="submenu-additional-links__link">О банке</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_branches"><a href="/ru/branches/" class="submenu-additional-links__link">Офисы, банкоматы и терминалы</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_feedback"><a href="/ru/obratnaja-svjaz/" class="submenu-additional-links__link">Обратная связь</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_english"><a href="/en/" class="submenu-additional-links__link">English</a></li>
+    </ul>
+</div>
+	                      </div>
+	                      <div class="owl-item-inside">
+                                
+
+<ul class="submenu-col">
+
+			            <li style="background-image:url(/upload/uf/450/actual.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/investors/reports/"  class="submenu-col__link-level-1 parent">
+                    Актуальные отчеты и публикации                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/reports/strategy"   
+                    class=" submenu-col__link-level-2">
+                    Стратегия банка                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/reports/annual"   
+                    class=" submenu-col__link-level-2">
+                    Годовые отчеты                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/reports/presentations"   
+                    class=" submenu-col__link-level-2">
+                    Презентации                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/2e3/shareholders.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/investors/info/"  class="submenu-col__link-level-1 parent">
+                    Информация для акционеров                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/info/shareholders"   
+                    class=" submenu-col__link-level-2">
+                    Акционеры банка                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/info/meetings-of-shareholders"   
+                    class=" submenu-col__link-level-2">
+                    Информация о собраниях акционеров                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/info/registrar"   
+                    class=" submenu-col__link-level-2">
+                    Реестродержатель                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/353/ESG.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/investors/esg/"  class="submenu-col__link-level-1 parent">
+                    ESG                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/esg/green-bond-framework"   
+                    class=" submenu-col__link-level-2">
+                    Green Bond Framework                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/esg/eco-and-social"   
+                    class=" submenu-col__link-level-2">
+                    Экологическая и социальная политика                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/esg/eco-otchet"   
+                    class=" submenu-col__link-level-2">
+                    Экологический отчет                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/esg/ESG-banking"   
+                    class=" submenu-col__link-level-2">
+                    ESG-banking made in Russia                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/5ec/rates.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/investors/ratings-rankings/"   
+                    class=" submenu-col__link-level-1">
+                    Рейтинги и рэнкинги                </a>
+            </li>
+	
+	
+	</ul><ul class='submenu-col'>	            <li style="background-image:url(/upload/uf/aff/reports.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/investors/pub-info/"  class="submenu-col__link-level-1 parent">
+                    Раскрытие информации                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/fin-reports"   
+                    class=" submenu-col__link-level-2">
+                    Финансовая отчетность                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/important-facts"  target='_blank'   
+                    class=" submenu-col__link-level-2">
+                    Существенные факты                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/inside-info"   
+                    class=" submenu-col__link-level-2">
+                    Перечень инсайдерской информации                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="http://e-disclosure.ru/portal/files.aspx?id=3018&type=5"   
+                    class=" submenu-col__link-level-2">
+                    Ежеквартальный отчет эмитента                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/aff-list"   
+                    class=" submenu-col__link-level-2">
+                    Аффилированные лица                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/issue-docs"  target='_blank'   
+                    class=" submenu-col__link-level-2">
+                    Эмиссионные документы                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/persons-list"   
+                    class=" submenu-col__link-level-2">
+                    Список лиц, под контролем которых находится банк                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/inside-docs"   
+                    class=" submenu-col__link-level-2">
+                    Внутренние документы                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/interfax"  target='_blank'   
+                    class=" submenu-col__link-level-2">
+                    Раскрытие информации на сайте  Интерфакс                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/regulatory-purp"   
+                    class=" submenu-col__link-level-2">
+                    Раскрытие информации для регулятивных целей                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/info-cb/"   
+                    class=" submenu-col__link-level-2">
+                    Информация профессионального участника рынка ценных бумаг                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/byyear/"   
+                    class=" submenu-col__link-level-2">
+                    Годовые отчеты                </a>
+            </li>
+	
+	
+	</ul></li></ul><ul class='submenu-col'>	            <li style="background-image:url(/upload/uf/6b6/structure.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/investors/corporate-governance/"  class="submenu-col__link-level-1 parent">
+                    Корпоративное управление                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/corporate-governance/principles"   
+                    class=" submenu-col__link-level-2">
+                    Системы и принципы корпоративного управления                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/corporate-governance/experience"   
+                    class=" submenu-col__link-level-2">
+                    Корпоративное управление: опыт банка                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/corporate-governance/structure"   
+                    class=" submenu-col__link-level-2">
+                    Структура управления                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/corporate-governance/struct-controls/"   
+                    class=" submenu-col__link-level-2">
+                    Структура и органы управления                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/iblock/8de/global.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/investors/international-activity"   
+                    class=" submenu-col__link-level-1">
+                    Международная деятельность: сотрудничество с банками и МФИ                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/iblock/e3c/contact.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/investors/contacts"   
+                    class=" submenu-col__link-level-1">
+                    Контакты                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/uf/d3c/subscribe.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/investors/subscribe/"   
+                    class=" submenu-col__link-level-1">
+                    Подписка на рассылку                </a>
+            </li>
+	
+	
 </ul>
-</li>
-</ul></div></div></nav>                            </div>
-<div class="header-align-right">
-<div class="header-row-element header-search"><form action="https://www.wecreditunion.ru/" id="header-search-form" class="header-search-open" method="get" name="searchform"><div class="s-box"><div class="s-box-content"><input class="s-input 1" id="s" name="s" placeholder="..." type="text" value=""><input class="s-submit" type="submit" value="Найти"></div></div><div class="s-icon" id="s-icon"><i class="fa fa-search"></i></div></form></div>                            </div>
+
+<div class="submenu-additional-links">
+    <p class="submenu-additional-links__text">Полезная информация:</p>
+    <ul class="submenu-additional-links__list">
+        <li class="submenu-additional-links__item submenu-additional-links__item_bank"><a href="/ru/about/info/" class="submenu-additional-links__link">О банке</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_branches"><a href="/ru/branches/" class="submenu-additional-links__link">Офисы, банкоматы и терминалы</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_feedback"><a href="/ru/obratnaja-svjaz/" class="submenu-additional-links__link">Обратная связь</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_english"><a href="/en/" class="submenu-additional-links__link">English</a></li>
+    </ul>
+</div>
+	                      </div>
+						  <div class="owl-item-inside">
+                                
+
+<ul class="submenu-col">
+
+			            <li style="background-image:url();" class="submenu-col__item-level-1">
+                <a href="/ru/about/info/"  class="submenu-col__link-level-1 parent">
+                    Общая информация                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/about/info/licenses"   
+                    class=" submenu-col__link-level-2">
+                    Лицензии                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/about/info/recvizit"   
+                    class=" submenu-col__link-level-2">
+                    Реквизиты                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url();" class="submenu-col__item-level-1                    ">
+                <a href="/ru/about/board-of-directors"   
+                    class=" submenu-col__link-level-1">
+                    Совет директоров и Правление                </a>
+            </li>
+	
+	
+		            <li style="background-image:url();" class="submenu-col__item-level-1                    ">
+                <a href="/ru/about/strategy"   
+                    class=" submenu-col__link-level-1">
+                    Стратегия экосистемы банка на 2019-2021                </a>
+            </li>
+	
+	
+		            <li style="background-image:url();" class="submenu-col__item-level-1">
+                <a href="/ru/about/to-investors/"  class="submenu-col__link-level-1 parent">
+                    Инвесторам                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/about/to-investors/presentations"   
+                    class=" submenu-col__link-level-2">
+                    Презентации                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/about/to-investors/green-bond-framework"   
+                    class=" submenu-col__link-level-2">
+                    Green Bond Framework                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/about/to-investors/raex"   
+                    class=" submenu-col__link-level-2">
+                    RAEX-Europe’s Green Bond Second Opinion                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/about/to-investors/environmental-social-policy"   
+                    class=" submenu-col__link-level-2">
+                    Экологическая и социальная политика                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/about/to-investors/environmental-social-policy-1"   
+                    class=" submenu-col__link-level-2">
+                    Дополнение №1 к Экологической и социальной политике                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/about/to-investors/environmental-social-policy-2"   
+                    class=" submenu-col__link-level-2">
+                    Дополнение №2 к Экологической и социальной политике                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/about/to-investors/environmental-social-policy-3"   
+                    class=" submenu-col__link-level-2">
+                    Дополнение №3 к Экологической и социальной политике                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/about/to-investors/green-bond-template"   
+                    class=" submenu-col__link-level-2">
+                    Green Bond Programme Information Template                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/about/to-investors/green-bond-form"   
+                    class=" submenu-col__link-level-2">
+                    Green Bond Programme Independent External Review Form                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url();" class="submenu-col__item-level-1">
+                <a href="/ru/about/career/"  class="submenu-col__link-level-1 parent">
+                    Карьера                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/about/career/scholarship-program"   
+                    class=" submenu-col__link-level-2">
+                    Стипендиальная программа                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url();" class="submenu-col__item-level-1                    ">
+                <a href="/ru/about/news/"   
+                    class=" submenu-col__link-level-1">
+                    Пресс-релизы                </a>
+            </li>
+	
+	
+		            <li style="background-image:url();" class="submenu-col__item-level-1                    ">
+                <a href="/ru/about/smi/"   
+                    class=" submenu-col__link-level-1">
+                    СМИ о нас                </a>
+            </li>
+	
+	
+		            <li style="background-image:url();" class="submenu-col__item-level-1                    ">
+                <a href="/ru/about/otzyvy"   
+                    class=" submenu-col__link-level-1">
+                    Отзывы клиентов                </a>
+            </li>
+	
+	
+		            <li style="background-image:url();" class="submenu-col__item-level-1                    ">
+                <a href="/ru/about/articles/"   
+                    class=" submenu-col__link-level-1">
+                    Книги, статьи и аналитика                </a>
+            </li>
+	
+	
+		            <li style="background-image:url();" class="submenu-col__item-level-1                    ">
+                <a href="/ru/about/businesseducation"   
+                    class=" submenu-col__link-level-1">
+                    Устойчивое развитие                </a>
+            </li>
+	
+	
+		            <li style="background-image:url();" class="submenu-col__item-level-1                    ">
+                <a href="/ru/about/events/"   
+                    class=" submenu-col__link-level-1">
+                    События                </a>
+            </li>
+	
+	
+</ul>
+
+<div class="submenu-additional-links">
+    <p class="submenu-additional-links__text">Полезная информация:</p>
+    <ul class="submenu-additional-links__list">
+        <li class="submenu-additional-links__item submenu-additional-links__item_bank"><a href="/ru/about/info/" class="submenu-additional-links__link">О банке</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_branches"><a href="/ru/branches/" class="submenu-additional-links__link">Офисы, банкоматы и терминалы</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_feedback"><a href="/ru/obratnaja-svjaz/" class="submenu-additional-links__link">Обратная связь</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_english"><a href="/en/" class="submenu-additional-links__link">English</a></li>
+    </ul>
+</div>
+	                      </div>
+	                   </div>
+	                  </ul>
+	                </div><!--/.nav-collapse -->
+	              </div>
+	            </div>
+	          </div>
+			</div>
+			<div class="header-top-main row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="">
+					   <p class=" btns-top text-left" style="float:left;">
+							<a style="color:#454545;background:#fff;"  href="#" id="region-mob" data-toggle="modal" data-target="#set-reg">Ростовская область&nbsp;<span class="glyphicon glyphicon-map-marker"></span></a>
+						</p>
+						<p style="float:right;" class=" btns-top text-right">
+							<a id="top-phone" href="tel:8-800-200-99-29" style="color:#454545;font-weight:500;text-decoration:none;">8-800-200-99-29&nbsp;<span class="glyphicon glyphicon-phone"></span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+						<div class="container">
+		 		<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div id="breadcrumb">
+							<p><a href="/ru/fiz/" title="Частным лицам">Частным лицам</a>&nbsp/&nbsp;<a href="/ru/fiz/kreditovanie/" title="Кредитование">Кредитование</a>&nbsp/&nbsp;<a href="/ru/fiz/kreditovanie/kreditnye-karty/" title="Кредитные карты">Кредитные карты</a>&nbsp/&nbsp;<span>ПАМЯТКА ПО ПОГАШЕНИЮ КРЕДИТОВ ПО БАНКОВСКИМ КАРТАМ</span></p>						</div>
+					</div>
+				</div>
+			</div>
+					</div>
+	</header>
+		<div id="page">
+			<div id="panel"></div>
+				<div id="top-menu-search">
+					<ul>
+						<li><a href="#" id="region">Ростовская область</a></li>
+						<li><a href="/ru/">Главная</a><span style="display:none;">CODE=pamyatka</span></li>
+						<li><a href="/en/">English</a></li>
+												<li><a href="https://link.centrinvest.ru/" target="_blank" rel="nofollow" >Вход в Интернет-Банк</a></li>
+											</ul>
+					<div id="search">
+												<div class="flat">
+	<form action="/ru/search/index.php">
+	<div id="search-button">
+			<input type="submit" name="s" id="search-submit-button" value=" ">
+	</div>
+	<div class="search-box"><input type="text" name="q" placeholder="Поиск"></div>
+	</form>
+	</div>
+										</div>
+					<div id="regions-wrap">
+<p style="text-align: left; height: 9px; padding: 0px 10px; position: relative; z-index: 3;"><img src="/images/top-box-corner-2.png" alt="^"/></p>
+<div id="regions">
+<div class="regionsbody" id="regionsbody">
+  <div class="regionsbg" id="regionsbg">
+    <ul>
+    <li><a href="/ru/fiz/kreditovanie/kreditnye-karty/pamyatka?reg=rostov">Ростовская область</a></li>
+    <li><a href="/ru/fiz/kreditovanie/kreditnye-karty/pamyatka?reg=krasnodar">Краснодарский край</a></li>
+    <li><a href="/ru/fiz/kreditovanie/kreditnye-karty/pamyatka?reg=stawropol">Ставропольский край</a></li>
+    <li><a href="/ru/fiz/kreditovanie/kreditnye-karty/pamyatka?reg=volgograd">Волгоградская область</a></li>
+    <li><a href="/ru/fiz/kreditovanie/kreditnye-karty/pamyatka?reg=moscow">г. Москва</a></li>
+    <li><a href="/ru/fiz/kreditovanie/kreditnye-karty/pamyatka?reg=novgorod">Нижегородская область</a></li>
+    <li><a href="/ru/fiz/kreditovanie/kreditnye-karty/pamyatka">Другой регион</a></li>
+    </ul>
+  </div>
+</div>
+<img src="/images/icons/close_icon.gif" alt="Закрыть" id="hide-regions" style="position:absolute;right:10px;top:10px;z-index:2;cursor:pointer;"/>
 </div>
 </div>
-</div>
-</div>
-<!-- header -->    <div class="container sidebar-right clearfix">  
-<div class="container-wrapper clearfix">
-<div class="container-inner">
-<div id="content">
-<div class="content-wrapper clearfix">
-<div class="single-post-inner">
-<div class="top-breadcrumbs">
-<p id="breadcrumbs"><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="https://www.wecreditunion.ru/" rel="v:url" property="v:title"><i class="fa fa-home"></i></a> » <span rel="v:child" typeof="v:Breadcrumb"><a href="https://www.wecreditunion.ru/informaciya/" rel="v:url" property="v:title">Информация</a> » <span rel="v:child" typeof="v:Breadcrumb"><a href="https://www.wecreditunion.ru/informaciya/stati/" rel="v:url" property="v:title">Статьи</a> » <span class="breadcrumb_last">Основные преимущества и недостатки банковских кредитных карт</span></span></span></span></span></p>						</div>	
-<div id="single-post-main-area" class="single-post-boxes single-post-main-area clearfix"><h1 class="single-post-title">Основные преимущества и недостатки банковских кредитных карт</h1><div class="single-post-main-meta clearfix"><div class="fm-post-meta single-post-meta-data"><span class="fm-meta-data fm-meta-icons"><i class="fa fa-calendar-o"></i>15.01.2019</span><span class="slash">•</span><span class="fm-meta-data fm-meta-icons"><i class="fa fa-eye"></i>1375</span><span class="slash">•</span><span class="fm-meta-data fm-meta-icons"><a href="https://www.wecreditunion.ru/informaciya/stati/25036-osnovnye-preimushhestva-i-nedostatki-bankovskih-kreditnyh-kart/#comments"><i class="fa fa-comments"></i>0</a></span></div><div class="fm-cat-list single-post-cat-list"><div class="fm-cat-list-content"><a class="single-post-cat-link" href="https://www.wecreditunion.ru/informaciya/">Информация</a><a class="single-post-cat-link" href="https://www.wecreditunion.ru/informaciya/stati/">Статьи</a></div></div></div><div class="single-post-post-area single-post-share-buttons clearfix"><div class="single-post-prop-area single-post-share-sidecontent"><div class="single-post-share-icons single-post-element clearfix"><div class="single-post-share-icons-wrapper"><a target="_blank" href="http://www.facebook.com/sharer.php?u=https://www.wecreditunion.ru/informaciya/stati/25036-osnovnye-preimushhestva-i-nedostatki-bankovskih-kreditnyh-kart/&#038;t=%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5+%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0+%D0%B8+%D0%BD%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%B8+%D0%B1%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D1%85+%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D0%BD%D1%8B%D1%85+%D0%BA%D0%B0%D1%80%D1%82" class="icon-facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="http://twitter.com/home/?status=%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5+%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0+%D0%B8+%D0%BD%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%B8+%D0%B1%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D1%85+%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D0%BD%D1%8B%D1%85+%D0%BA%D0%B0%D1%80%D1%82+-+https://www.wecreditunion.ru/informaciya/stati/25036-osnovnye-preimushhestva-i-nedostatki-bankovskih-kreditnyh-kart/" class="icon-twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="http://vk.com/share.php?url=https://www.wecreditunion.ru/informaciya/stati/25036-osnovnye-preimushhestva-i-nedostatki-bankovskih-kreditnyh-kart/" class="icon-vk"><i class="fa fa-vk"></i></a><a target="_blank" href="https://plus.google.com/share?url=https://www.wecreditunion.ru/informaciya/stati/25036-osnovnye-preimushhestva-i-nedostatki-bankovskih-kreditnyh-kart/" class="icon-gplus"><i class="fa fa-google-plus"></i></a><a id="scrolling" class="scroll-to-top single-post" href=""><i class="fa fa-angle-up" aria-hidden="true"></i></a></div></div></div><div class="single-post-content-area"><div class="single-post-content-area-wrapper"><div class="fm-post-thumbnail single-post-pformat-area"><div style="width: 260px;"><img width="391" height="220" src="https://www.wecreditunion.ru/wp-content/uploads/2018/04/credit-cards_kjgfhvme89756nmvciwhrenjv8w3475b80745nv8745-391x220.jpg" class="attachment-fenomen_thumbnail_480_480 size-fenomen_thumbnail_480_480 wp-post-image" alt="" caption="" srcset="https://www.wecreditunion.ru/wp-content/uploads/2018/04/credit-cards_kjgfhvme89756nmvciwhrenjv8w3475b80745nv8745-391x220.jpg 391w, https://www.wecreditunion.ru/wp-content/uploads/2018/04/credit-cards_kjgfhvme89756nmvciwhrenjv8w3475b80745nv8745-336x189.jpg 336w, https://www.wecreditunion.ru/wp-content/uploads/2018/04/credit-cards_kjgfhvme89756nmvciwhrenjv8w3475b80745nv8745-240x134.jpg 240w, https://www.wecreditunion.ru/wp-content/uploads/2018/04/credit-cards_kjgfhvme89756nmvciwhrenjv8w3475b80745nv8745-396x223.jpg 396w, https://www.wecreditunion.ru/wp-content/uploads/2018/04/credit-cards_kjgfhvme89756nmvciwhrenjv8w3475b80745nv8745-50x28.jpg 50w, https://www.wecreditunion.ru/wp-content/uploads/2018/04/credit-cards_kjgfhvme89756nmvciwhrenjv8w3475b80745nv8745.jpg 400w" sizes="(max-width: 391px) 100vw, 391px" /></div><div class="post-thumb-caption" style="width: 260px;"></div></div><div class="single-post-content post-filter-styles"><p>Сегодня оформить кредитную карту не составляет особого труда для каждого совершеннолетнего гражданина, ведь подавляющее большинство банковских учреждений, обладающих соответствующей лицензией, не только осуществляет их эмиссию, но и занимается чрезвычайно активным продвижением и распространением данного банковского продукта.</p>
-<p>При этом стоит отметить, что кредитная карта давно уже стала более предпочтительной альтернативой обычному кредиту, так как ее использование в повседневной жизни является очень удобным и выгодным, причем получить кредитку может даже неблагонадежный с точки зрения крупных банковских организаций заемщик, которому они предпочитают отказывать в выдаче кредита.</p>
-<h3>Каковы главные преимущества кредитной карты?</h3>
-<p>В первую очередь кредитка дает своему владельцу своего рода финансовую свободу, позволяя совершать в любое время все необходимые приобретения, а также избавляет от необходимости использовать наличные средства. Помимо этого кредитная карта является очень удобным и вполне безопасным средством осуществления всевозможных взаиморасчетов в сети Интернет, что в современных реалиях крайне актуально.</p>
-<p>Если же говорить о более прагматичных преимуществах кредитки, то вы можете рассчитывать не следующие положительные моменты, когда примете решение получить кредитную карту в каком-либо банковском учреждении:</p>
-<ol>
-<li>Грейс-период. Как правило, все кредитки имеют так называемый льготный период, в течение которого можно возвратить банку использованные кредитные средства без оплаты процентов за пользование предоставленным вам кредитным лимитом.</li>
-<li>Процентная ставка. Обычно данный показатель существенно ниже, чем в случае с иными видами кредитования, что делает использование имеющихся заемных средств, доступных на кредитной карте, более выгодным.</li>
-<li>Револьвер-система. Все денежные средства, которые вы будете зачислять на карту в счет погашения долга, сразу же становятся доступными для дальнейшего использования. Это очень удобно, ведь оформить кредитку нужно только один раз, а вот каждый новый кредит вам придется всегда оформлять заново.</li>
-</ol>
-<h3>Основные недостатки использования кредитных карт</h3>
-<p>Вне всяких сомнений, все банки функционируют ради получения прибыли, источником которой (в том числе) является и владелец кредитки. Именно поэтому имеют место быть и некоторые негативные моменты, с которыми может столкнуться каждый, кто решит оформить кредитную карту и начнет ею активно пользоваться, а именно:</p>
+				</div>
+
+
+
+
+
+
+
+  <!-- END HEADER SECTION -->
+
+
+
+			<div id="header">
+				<div id="header-white-stripe"></div>
+			    <div id="header-inner-wrapper">
+					<div id="logo-menu">
+						<a href="/ru/" title="На главную"><img src="/images/logo_ru.png" id="header_logo"  alt="Центр-инвест" /></a>
+						
 <ul>
-<li>Скрытые комиссии и платежи. Практика показывает, что иногда сотрудники банка предпочитают умалчивать о подобных нюансах, к примеру, они редко упоминают о сервисе СМС-оповещений, который является платным. Выход &#8212; сразу попросите отключить все дополнительные платные услуги, если они вам не нужны.</li>
-<li>Плата за выпуск и обслуживание. Это обычно это касается так называемых элитных карт, которые дают своему владельцу не только более высокий статус, но и ряд некоторых привилегий. Выход &#8212; если вам это не нужно, то старайтесь оформить кредитную карту, имеющую базовый статус.</li>
-<li>Психологическая зависимость. Природа практически любого человека такова, что имея в своем распоряжении денежные средства, он их обязательно начнет тратить, даже если в этом нет необходимости. Выход &#8212; старайтесь стать более дисциплинированным в своих расходах или же попросите ограничить существующий лимит.</li>
+
+			<li><a href="/ru/about/info/">О банке</a></li>
+		
+			<li><a href="/ru/branches/">Офисы, банкоматы и терминалы</a></li>
+		
+			<li><a href="/ru/obratnaja-svjaz/">Обратная связь</a></li>
+		
+
 </ul>
-<p>Теперь вы знаете, что любая кредитка, выпущенная каким-либо банковским учреждением, обладает как массой неоспоримых преимуществ, так и рядом довольно значимых недостатков. Однако воздействие последних, к счастью, можно при желании полностью или частично нивелировать, если вы все-таки соберетесь оформить кредитную карту в определенный жизненный момент.</p>
-<div class="fm-tag-list single-post-tag-list"><div class="fm-tag-list-content"><a class="single-post-tag-link" href="https://www.wecreditunion.ru/tag/bankovskie-karty/">Банковские карты</a><a class="single-post-tag-link" href="https://www.wecreditunion.ru/tag/kreditovanie/">Кредитование</a><a class="single-post-tag-link" href="https://www.wecreditunion.ru/tag/finansovaya-gramotnost/">Финансовая грамотность</a></div></div></div><div class="a-single a-19"><!-- Yandex.RTB R-A-333429-2 -->
-<div id="yandex_rtb_R-A-333429-2"></div>
-</div></div></div></div></div><div class="single-post-boxes single-post-related-posts clearfix"><h2 class="fm-box-title"><span>Читайте также</span></h2><div class="single-post-related-posts-content clearfix"><div class="fm-layout-item single-post-related-post row"><div class="single-post-related-post-wrapper"><div class="fm-post-thumbnail single-post-related-post-thumbnail"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25786-banki-predupredili-o-riskah-uvelicheniya-limita-beskontaktnyh-platezhei/"></a></div><div class="single-post-related-post-data"><h3 class="fm-post-title fm-post-hover-title single-post-related-post-title"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25786-banki-predupredili-o-riskah-uvelicheniya-limita-beskontaktnyh-platezhei/">Банки предупредили о рисках увеличения лимита бесконтактных платежей</a></h3><div class="single-post-related-post-meta"><span class="fm-meta-data fm-meta-icons"><i class="fa fa-calendar-o"></i>26.04.2019</span><span class="fm-meta-data fm-meta-icons"><i class="fa fa-eye"></i>761</span></div></div></div></div><div class="fm-layout-item single-post-related-post row"><div class="single-post-related-post-wrapper"><div class="fm-post-thumbnail single-post-related-post-thumbnail"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25770-okb-nevozvratnye-dolgi-rossiyan-pered-bankami-dostigli-16-trln-rublei/"></a></div><div class="single-post-related-post-data"><h3 class="fm-post-title fm-post-hover-title single-post-related-post-title"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25770-okb-nevozvratnye-dolgi-rossiyan-pered-bankami-dostigli-16-trln-rublei/">ОКБ: невозвратные долги россиян перед банками достигли 1,6 трлн рублей</a></h3><div class="single-post-related-post-meta"><span class="fm-meta-data fm-meta-icons"><i class="fa fa-calendar-o"></i>25.04.2019</span><span class="fm-meta-data fm-meta-icons"><i class="fa fa-eye"></i>334</span></div></div></div></div><div class="fm-layout-item single-post-related-post row"><div class="single-post-related-post-wrapper"><div class="fm-post-thumbnail single-post-related-post-thumbnail"><a href="https://www.wecreditunion.ru/novosti/glavnoe/25747-nbki-srednii-razmer-potrebitelskih-kreditov-uvelichilsya-na-243/"></a></div><div class="single-post-related-post-data"><h3 class="fm-post-title fm-post-hover-title single-post-related-post-title"><a href="https://www.wecreditunion.ru/novosti/glavnoe/25747-nbki-srednii-razmer-potrebitelskih-kreditov-uvelichilsya-na-243/">НБКИ: средний размер потребительских кредитов увеличился на 24,3%</a></h3><div class="single-post-related-post-meta"><span class="fm-meta-data fm-meta-icons"><i class="fa fa-calendar-o"></i>22.04.2019</span><span class="fm-meta-data fm-meta-icons"><i class="fa fa-eye"></i>343</span></div></div></div></div><div class="fm-layout-item single-post-related-post row"><div class="single-post-related-post-wrapper"><div class="fm-post-thumbnail single-post-related-post-thumbnail"><a href="https://www.wecreditunion.ru/informaciya/stati/25744-finansovaya-gramotnost-kak-izbezhat-finansovyh-piramid/"></a></div><div class="single-post-related-post-data"><h3 class="fm-post-title fm-post-hover-title single-post-related-post-title"><a href="https://www.wecreditunion.ru/informaciya/stati/25744-finansovaya-gramotnost-kak-izbezhat-finansovyh-piramid/">Финансовая грамотность. Как избежать финансовых пирамид?</a></h3><div class="single-post-related-post-meta"><span class="fm-meta-data fm-meta-icons"><i class="fa fa-calendar-o"></i>22.04.2019</span><span class="fm-meta-data fm-meta-icons"><i class="fa fa-eye"></i>534</span></div></div></div></div><div class="fm-layout-item single-post-related-post row"><div class="single-post-related-post-wrapper"><div class="fm-post-thumbnail single-post-related-post-thumbnail"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25725-karty-platezhnoi-sistemy-mir-nachinayut-prinimat-v-turcii/"></a></div><div class="single-post-related-post-data"><h3 class="fm-post-title fm-post-hover-title single-post-related-post-title"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25725-karty-platezhnoi-sistemy-mir-nachinayut-prinimat-v-turcii/">Карты платежной системы «Мир» начинают принимать в Турции</a></h3><div class="single-post-related-post-meta"><span class="fm-meta-data fm-meta-icons"><i class="fa fa-calendar-o"></i>18.04.2019</span><span class="fm-meta-data fm-meta-icons"><i class="fa fa-eye"></i>363</span></div></div></div></div><div class="fm-layout-item single-post-related-post row"><div class="single-post-related-post-wrapper"><div class="fm-post-thumbnail single-post-related-post-thumbnail"><a href="https://www.wecreditunion.ru/novosti/trendy/25690-visa-zapustila-pilotnyi-proekt-po-snyatiyu-nalichnyh-na-kassah-magazinov/"></a></div><div class="single-post-related-post-data"><h3 class="fm-post-title fm-post-hover-title single-post-related-post-title"><a href="https://www.wecreditunion.ru/novosti/trendy/25690-visa-zapustila-pilotnyi-proekt-po-snyatiyu-nalichnyh-na-kassah-magazinov/">Visa запустила пилотный проект по снятию наличных на кассах магазинов</a></h3><div class="single-post-related-post-meta"><span class="fm-meta-data fm-meta-icons"><i class="fa fa-calendar-o"></i>15.04.2019</span><span class="fm-meta-data fm-meta-icons"><i class="fa fa-eye"></i>367</span></div></div></div></div><div class="fm-layout-item single-post-related-post row"><div class="single-post-related-post-wrapper"><div class="fm-post-thumbnail single-post-related-post-thumbnail"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25675-v-gosdumu-vnesen-zakonoproekt-o-zaprete-mikrokreditov-pod-zalog-zhilya/"></a></div><div class="single-post-related-post-data"><h3 class="fm-post-title fm-post-hover-title single-post-related-post-title"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25675-v-gosdumu-vnesen-zakonoproekt-o-zaprete-mikrokreditov-pod-zalog-zhilya/">В Госдуму внесен законопроект о запрете микрокредитов под залог жилья</a></h3><div class="single-post-related-post-meta"><span class="fm-meta-data fm-meta-icons"><i class="fa fa-calendar-o"></i>10.04.2019</span><span class="fm-meta-data fm-meta-icons"><i class="fa fa-eye"></i>363</span></div></div></div></div><div class="fm-layout-item single-post-related-post row"><div class="single-post-related-post-wrapper"><div class="fm-post-thumbnail single-post-related-post-thumbnail"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25667-mfo-i-banki-obespechat-malomu-biznesu-uchastie-v-goszakupkah/"></a></div><div class="single-post-related-post-data"><h3 class="fm-post-title fm-post-hover-title single-post-related-post-title"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25667-mfo-i-banki-obespechat-malomu-biznesu-uchastie-v-goszakupkah/">МФО и банки обеспечат малому бизнесу участие в госзакупках</a></h3><div class="single-post-related-post-meta"><span class="fm-meta-data fm-meta-icons"><i class="fa fa-calendar-o"></i>05.04.2019</span><span class="fm-meta-data fm-meta-icons"><i class="fa fa-eye"></i>304</span></div></div></div></div><div class="fm-layout-item single-post-related-post row"><div class="single-post-related-post-wrapper"><div class="fm-post-thumbnail single-post-related-post-thumbnail"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25651-kollektory-nazvali-osnovnye-prichiny-otkaza-dolzhnikov-pogashat-kredity/"></a></div><div class="single-post-related-post-data"><h3 class="fm-post-title fm-post-hover-title single-post-related-post-title"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25651-kollektory-nazvali-osnovnye-prichiny-otkaza-dolzhnikov-pogashat-kredity/">Коллекторы назвали основные причины отказа должников погашать кредиты</a></h3><div class="single-post-related-post-meta"><span class="fm-meta-data fm-meta-icons"><i class="fa fa-calendar-o"></i>04.04.2019</span><span class="fm-meta-data fm-meta-icons"><i class="fa fa-eye"></i>318</span></div></div></div></div><div class="fm-layout-item single-post-related-post row"><div class="single-post-related-post-wrapper"><div class="fm-post-thumbnail single-post-related-post-thumbnail"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25631-visa-i-mastercard-obyazhut-banki-rossii-vypuskat-lish-beskontaktnye-karty/"></a></div><div class="single-post-related-post-data"><h3 class="fm-post-title fm-post-hover-title single-post-related-post-title"><a href="https://www.wecreditunion.ru/novosti/obzor-pressy/25631-visa-i-mastercard-obyazhut-banki-rossii-vypuskat-lish-beskontaktnye-karty/">Visa и Mastercard обяжут банки России выпускать лишь бесконтактные карты</a></h3><div class="single-post-related-post-meta"><span class="fm-meta-data fm-meta-icons"><i class="fa fa-calendar-o"></i>02.04.2019</span><span class="fm-meta-data fm-meta-icons"><i class="fa fa-eye"></i>312</span></div></div></div></div></div></div>
-<div id="comments" class="single-post-boxes">
-<div id="single-post-comments-form" class="single-post-boxes single-post-comment-form clearfix">
-<div id="respond" class="comment-respond">
-<h3 id="reply-title" class="fm-box-title comment-reply-title">Добавить комментарий <small><a rel="nofollow" id="cancel-comment-reply-link" href="/informaciya/stati/25036-osnovnye-preimushhestva-i-nedostatki-bankovskih-kreditnyh-kart/#respond" style="display:none;">Отменить ответ</a></small></h3><form action="https://www.wecreditunion.ru/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="Комментарий"></textarea></p><p class="comment-form-author"><input id="author" name="author" type="text" placeholder="Имя" value="" size="30" /></p>
-<p class="comment-form-email"><input id="email" name="email" type="text" placeholder="E-mail" value="" size="30" /></p>
-<p class="comment-form-url"><input id="url" name="url" type="text" placeholder="Сайт" value="" size="30" /></p>
-<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.</label></p>
-<p class="cptch_block"><span
-class="cptch_wrap cptch_ajax_wrap"
-data-cptch-form="general"
-data-cptch-input="cptch_number"
-data-cptch-class="cptch_wp_comments">
-<noscript>Для того, чтобы пройти тест CAPTCHA включите JavaScript</noscript>
-</span></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="comment-submit-button" value="Отправить комментарий" /> <input type='hidden' name='comment_post_ID' value='25036' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</p></form>	</div><!-- #respond -->
+					</div>
+					<div id="main-menu">
+						<ul>
+							<li class="">
+								<a class="root-item" href="/ru/fiz/"><span>Частным<br>лицам</span></a>
+								<div class="submenu-wrapper">
+								
+
+<ul class="submenu-col">
+
+			            <li style="background-image:url(/upload/uf/263/credits-01.svg);" class="submenu-col__item-level-1 active">
+                <a href="/ru/fiz/kreditovanie/"  class="submenu-col__link-level-1 parent item-selected">
+                    Кредитование                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/spacial"   
+                    class=" submenu-col__link-level-2">
+                    Специальное предложение                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/ipoteka/"   
+                    class=" submenu-col__link-level-2">
+                    Ипотека                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/potrebitelskij-kredit/"   
+                    class=" submenu-col__link-level-2">
+                    Потребительский кредит                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/avtokreditovanie/"   
+                    class=" submenu-col__link-level-2">
+                    Автокредитование                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                     active">
+                <a href="/ru/fiz/kreditovanie/kreditnye-karty/"   
+                    class="item-selected submenu-col__link-level-2">
+                    Кредитные карты                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/calc"   
+                    class=" submenu-col__link-level-2">
+                    Кредитный калькулятор                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/tarif"   
+                    class=" submenu-col__link-level-2">
+                    Операции по предоставлению кредитов                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/paket-dokumentov"   
+                    class=" submenu-col__link-level-2">
+                    Пакет документов                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/kreditovanie/questions"   
+                    class=" submenu-col__link-level-2">
+                    Вопросы и ответы                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/e72/deposits-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/vklady/"  class="submenu-col__link-level-1 parent">
+                    Вклады                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/vklady/rublevye-vklady/"   
+                    class=" submenu-col__link-level-2">
+                    Рублевые                 </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/vklady/valutnye/"   
+                    class=" submenu-col__link-level-2">
+                    Валютные                 </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/1bb/credits-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/fiz/obsluzhivanie/"   
+                    class=" submenu-col__link-level-1">
+                    VIP-обслуживание                </a>
+            </li>
+	
+	
+	</ul><ul class='submenu-col'>	            <li style="background-image:url(/upload/uf/3dc/cards-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/bankovskie-karty/"  class="submenu-col__link-level-1 parent">
+                    Карты                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-karty/new-products/"   
+                    class=" submenu-col__link-level-2">
+                    Дебетовые карты                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-karty/security/"   
+                    class=" submenu-col__link-level-2">
+                    Безопасность                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-karty/dop-service/"   
+                    class=" submenu-col__link-level-2">
+                    Возможности                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-karty/docs"   
+                    class=" submenu-col__link-level-2">
+                    Документы                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-karty/kursy-valyut/"   
+                    class=" submenu-col__link-level-2">
+                    Курсы валют                 </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-karty/help"   
+                    class=" submenu-col__link-level-2">
+                    Вопросы и ответы                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/778/service-internet-bank.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/internet-bank/"  class="submenu-col__link-level-1 parent">
+                    Сервис Интернет-Банк                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/internet-bank/info"   
+                    class=" submenu-col__link-level-2">
+                    Новые возможности                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/604/safe-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/bankovskie-seifovye-yacheiki/"  class="submenu-col__link-level-1 parent">
+                    Cейфовые ячейки                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-seifovye-yacheiki/sokol"   
+                    class=" submenu-col__link-level-2">
+                    В головном офисе                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-seifovye-yacheiki/rostovskaya_oblast/"   
+                    class=" submenu-col__link-level-2">
+                    Ростовская область                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-seifovye-yacheiki/krasnodarskiy_kray/"   
+                    class=" submenu-col__link-level-2">
+                    Краснодарский край                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-seifovye-yacheiki/stavropolskiy_kray/"   
+                    class=" submenu-col__link-level-2">
+                    Ставропольский край                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/bankovskie-seifovye-yacheiki/volgogradskaya_oblast/"   
+                    class=" submenu-col__link-level-2">
+                    Волгоградская область                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/iblock/495/coins-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/fiz/prodaja-monet"   
+                    class=" submenu-col__link-level-1">
+                    Продажа монет                </a>
+            </li>
+	
+	
+	</ul><ul class='submenu-col'>	            <li style="background-image:url(/upload/uf/a34/money-trans-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/denezhnye-perevody/"  class="submenu-col__link-level-1 parent">
+                    Денежные переводы                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/denezhnye-perevody/western-union/"   
+                    class=" submenu-col__link-level-2">
+                    «Western Union»                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/denezhnye-perevody/zolotaya-korona/"   
+                    class=" submenu-col__link-level-2">
+                    «Золотая корона»                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/4d9/securities-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/cennye-bumagi/"  class="submenu-col__link-level-1 parent">
+                    Ценные бумаги                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/cennye-bumagi/ofbu/"   
+                    class=" submenu-col__link-level-2">
+                    ОФБУ                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/cennye-bumagi/brokerskoe-obsluzhivanie"   
+                    class=" submenu-col__link-level-2">
+                    Брокерское обслуживание                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/fa7/tarif-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/fiz/tarify-na-obsluzhivanie/"  class="submenu-col__link-level-1 parent">
+                    Тарифы на обслуживание                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/tarify-na-obsluzhivanie/valuta-rf"   
+                    class=" submenu-col__link-level-2">
+                    Операции в валюте РФ                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/tarify-na-obsluzhivanie/v-inostrannoi-valute"   
+                    class=" submenu-col__link-level-2">
+                    В иностранной валюте                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/fiz/tarify-na-obsluzhivanie/ystroistva-samoobslyjivaniya"   
+                    class=" submenu-col__link-level-2">
+                    В платежных терминалах                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/57a/payments-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/fiz/platezhi-naseleniya/"   
+                    class=" submenu-col__link-level-1">
+                    Платежи населения                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/iblock/efe/spravochnaya-info.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/fiz/spravochnaya-informatsiya"   
+                    class=" submenu-col__link-level-1">
+                    Справочная информация                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/iblock/e14/advices.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/fiz/sovety-po-finansam"   
+                    class=" submenu-col__link-level-1">
+                    Советы по финансам                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/iblock/d01/vozvrat-nalogov.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/fiz/vozvrat-nalogov"   
+                    class=" submenu-col__link-level-1">
+                    Возврат налогов                </a>
+            </li>
+	
+	
+</ul>
+
+<div class="submenu-additional-links">
+    <p class="submenu-additional-links__text">Полезная информация:</p>
+    <ul class="submenu-additional-links__list">
+        <li class="submenu-additional-links__item submenu-additional-links__item_bank"><a href="/ru/about/info/" class="submenu-additional-links__link">О банке</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_branches"><a href="/ru/branches/" class="submenu-additional-links__link">Офисы, банкоматы и терминалы</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_feedback"><a href="/ru/obratnaja-svjaz/" class="submenu-additional-links__link">Обратная связь</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_english"><a href="/en/" class="submenu-additional-links__link">English</a></li>
+    </ul>
+</div>
+								</div>
+							</li>
+							<li class="">
+								<a class="root-item" href="/ru/biz/"><span>Малому<br>бизнесу</span></a>
+								<div class="submenu-wrapper">
+								
+
+<ul class="submenu-col">
+
+			            <li style="background-image:url(/upload/uf/1da/rko-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/rko/"  class="submenu-col__link-level-1 parent">
+                    РКО                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/rko/tarif"   
+                    class=" submenu-col__link-level-2">
+                    Тарифы                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/rko/valjutny-kontrol"   
+                    class=" submenu-col__link-level-2">
+                    Валютный контроль                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/f20/client-bank-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/klient-bank/"  class="submenu-col__link-level-1 parent">
+                    Система «Клиент-банк»                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/klient-bank/centr-invest_biznes_onlajn"   
+                    class=" submenu-col__link-level-2">
+                    «Центр-инвест»-Бизнес онлайн                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/klient-bank/info"   
+                    class=" submenu-col__link-level-2">
+                    Новые возможности                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/klient-bank/centr-invest-klient-on-line"   
+                    class=" submenu-col__link-level-2">
+                    «Центр-инвест»-Клиент (on-line)                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/iblock/981/equiring-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/biz/equiring"   
+                    class=" submenu-col__link-level-1">
+                    Эквайринг                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/uf/6e2/salary-proj-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/zarplatnye-proekty/"  class="submenu-col__link-level-1 parent">
+                    Зарплатные проекты                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/zarplatnye-proekty/special-msb"   
+                    class=" submenu-col__link-level-2">
+                    Специальные условия для МСБ                </a>
+            </li>
+	
+	
+	</ul></li></ul><ul class='submenu-col'>	            <li style="background-image:url(/upload/uf/4a6/kred-prog-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/biz/programmy-kreditovanija/"   
+                    class=" submenu-col__link-level-1">
+                    Кредитование бизнеса                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/uf/6b7/garant-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/biz/bankovskie-garantii/"   
+                    class=" submenu-col__link-level-1">
+                    Банковские гарантии                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/uf/34e/fin-lizing-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/finansovyj-lizing/"  class="submenu-col__link-level-1 parent">
+                    Финансовый лизинг                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/finansovyj-lizing/calc"   
+                    class=" submenu-col__link-level-2">
+                    Лизинговый калькулятор                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/e7f/cards-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/korporativnye-karty/"  class="submenu-col__link-level-1 parent">
+                     Корпоративные карты                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/korporativnye-karty/mc-business-prices"   
+                    class=" submenu-col__link-level-2">
+                    Тарифы по картам MasterCard Business                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/dc7/money-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/razmeschenie-denezhnyh-sredstv-cennye-bumagi/"  class="submenu-col__link-level-1 parent">
+                    Размещение денежных средств и ценных бумаг                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/razmeschenie-denezhnyh-sredstv-cennye-bumagi/deposit/"   
+                    class=" submenu-col__link-level-2">
+                    Депозиты                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/razmeschenie-denezhnyh-sredstv-cennye-bumagi/cennye-bumagi/"   
+                    class=" submenu-col__link-level-2">
+                    Ценные бумаги                </a>
+            </li>
+	
+	
+	</ul></li></ul><ul class='submenu-col'>	            <li style="background-image:url(/upload/uf/86c/torg_fin.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/torgovoe-finansirovanie/"  class="submenu-col__link-level-1 parent">
+                    Торговое финансирование                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/torgovoe-finansirovanie/import"   
+                    class=" submenu-col__link-level-2">
+                    Финансирование импорта                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/torgovoe-finansirovanie/export"   
+                    class=" submenu-col__link-level-2">
+                    Финансирование экспорта                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/torgovoe-finansirovanie/garantii-i-activy"   
+                    class=" submenu-col__link-level-2">
+                    Банковские гарантии и резервные аккредитивы                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/5ac/invest-energ-01.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/biz/investicii-v-energosberezhenie/"  class="submenu-col__link-level-1 parent">
+                    Инвестиции в энергосбережение                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/biz/investicii-v-energosberezhenie/calc-energy"   
+                    class=" submenu-col__link-level-2">
+                    Калькулятор энергоэффективности                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/iblock/68a/hotline-01.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/biz/goryachaya-liniya"   
+                    class=" submenu-col__link-level-1">
+                    Горячая линия                </a>
+            </li>
+	
+	
+		            <li style="background-image:url();" class="submenu-col__item-level-1                    ">
+                <a href="/ru/biz/kredit-kanikuly"   
+                    class=" submenu-col__link-level-1">
+                    Кредитные каникулы                </a>
+            </li>
+	
+	
+</ul>
+
+<div class="submenu-additional-links">
+    <p class="submenu-additional-links__text">Полезная информация:</p>
+    <ul class="submenu-additional-links__list">
+        <li class="submenu-additional-links__item submenu-additional-links__item_bank"><a href="/ru/about/info/" class="submenu-additional-links__link">О банке</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_branches"><a href="/ru/branches/" class="submenu-additional-links__link">Офисы, банкоматы и терминалы</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_feedback"><a href="/ru/obratnaja-svjaz/" class="submenu-additional-links__link">Обратная связь</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_english"><a href="/en/" class="submenu-additional-links__link">English</a></li>
+    </ul>
+</div>
+								</div>
+							</li>
+							<li class="">
+								<a class="root-item" href="/ru/investors/"><span>Акционерам<br/>и инвесторам</span></a>
+								<div class="submenu-wrapper">
+								
+
+<ul class="submenu-col">
+
+			            <li style="background-image:url(/upload/uf/450/actual.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/investors/reports/"  class="submenu-col__link-level-1 parent">
+                    Актуальные отчеты и публикации                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/reports/strategy"   
+                    class=" submenu-col__link-level-2">
+                    Стратегия банка                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/reports/annual"   
+                    class=" submenu-col__link-level-2">
+                    Годовые отчеты                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/reports/presentations"   
+                    class=" submenu-col__link-level-2">
+                    Презентации                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/2e3/shareholders.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/investors/info/"  class="submenu-col__link-level-1 parent">
+                    Информация для акционеров                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/info/shareholders"   
+                    class=" submenu-col__link-level-2">
+                    Акционеры банка                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/info/meetings-of-shareholders"   
+                    class=" submenu-col__link-level-2">
+                    Информация о собраниях акционеров                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/info/registrar"   
+                    class=" submenu-col__link-level-2">
+                    Реестродержатель                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/353/ESG.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/investors/esg/"  class="submenu-col__link-level-1 parent">
+                    ESG                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/esg/green-bond-framework"   
+                    class=" submenu-col__link-level-2">
+                    Green Bond Framework                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/esg/eco-and-social"   
+                    class=" submenu-col__link-level-2">
+                    Экологическая и социальная политика                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/esg/eco-otchet"   
+                    class=" submenu-col__link-level-2">
+                    Экологический отчет                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/esg/ESG-banking"   
+                    class=" submenu-col__link-level-2">
+                    ESG-banking made in Russia                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/uf/5ec/rates.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/investors/ratings-rankings/"   
+                    class=" submenu-col__link-level-1">
+                    Рейтинги и рэнкинги                </a>
+            </li>
+	
+	
+	</ul><ul class='submenu-col'>	            <li style="background-image:url(/upload/uf/aff/reports.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/investors/pub-info/"  class="submenu-col__link-level-1 parent">
+                    Раскрытие информации                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/fin-reports"   
+                    class=" submenu-col__link-level-2">
+                    Финансовая отчетность                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/important-facts"  target='_blank'   
+                    class=" submenu-col__link-level-2">
+                    Существенные факты                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/inside-info"   
+                    class=" submenu-col__link-level-2">
+                    Перечень инсайдерской информации                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="http://e-disclosure.ru/portal/files.aspx?id=3018&type=5"   
+                    class=" submenu-col__link-level-2">
+                    Ежеквартальный отчет эмитента                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/aff-list"   
+                    class=" submenu-col__link-level-2">
+                    Аффилированные лица                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/issue-docs"  target='_blank'   
+                    class=" submenu-col__link-level-2">
+                    Эмиссионные документы                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/persons-list"   
+                    class=" submenu-col__link-level-2">
+                    Список лиц, под контролем которых находится банк                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/inside-docs"   
+                    class=" submenu-col__link-level-2">
+                    Внутренние документы                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/interfax"  target='_blank'   
+                    class=" submenu-col__link-level-2">
+                    Раскрытие информации на сайте  Интерфакс                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/regulatory-purp"   
+                    class=" submenu-col__link-level-2">
+                    Раскрытие информации для регулятивных целей                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/info-cb/"   
+                    class=" submenu-col__link-level-2">
+                    Информация профессионального участника рынка ценных бумаг                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/pub-info/byyear/"   
+                    class=" submenu-col__link-level-2">
+                    Годовые отчеты                </a>
+            </li>
+	
+	
+	</ul></li></ul><ul class='submenu-col'>	            <li style="background-image:url(/upload/uf/6b6/structure.svg);" class="submenu-col__item-level-1">
+                <a href="/ru/investors/corporate-governance/"  class="submenu-col__link-level-1 parent">
+                    Корпоративное управление                </a>
+                <ul>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/corporate-governance/principles"   
+                    class=" submenu-col__link-level-2">
+                    Системы и принципы корпоративного управления                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/corporate-governance/experience"   
+                    class=" submenu-col__link-level-2">
+                    Корпоративное управление: опыт банка                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/corporate-governance/structure"   
+                    class=" submenu-col__link-level-2">
+                    Структура управления                </a>
+            </li>
+	
+	
+		            <li  class="submenu-col__item-level-2                    ">
+                <a href="/ru/investors/corporate-governance/struct-controls/"   
+                    class=" submenu-col__link-level-2">
+                    Структура и органы управления                </a>
+            </li>
+	
+	
+			</ul></li>
+		            <li style="background-image:url(/upload/iblock/8de/global.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/investors/international-activity"   
+                    class=" submenu-col__link-level-1">
+                    Международная деятельность: сотрудничество с банками и МФИ                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/iblock/e3c/contact.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/investors/contacts"   
+                    class=" submenu-col__link-level-1">
+                    Контакты                </a>
+            </li>
+	
+	
+		            <li style="background-image:url(/upload/uf/d3c/subscribe.svg);" class="submenu-col__item-level-1                    ">
+                <a href="/ru/investors/subscribe/"   
+                    class=" submenu-col__link-level-1">
+                    Подписка на рассылку                </a>
+            </li>
+	
+	
+</ul>
+
+<div class="submenu-additional-links">
+    <p class="submenu-additional-links__text">Полезная информация:</p>
+    <ul class="submenu-additional-links__list">
+        <li class="submenu-additional-links__item submenu-additional-links__item_bank"><a href="/ru/about/info/" class="submenu-additional-links__link">О банке</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_branches"><a href="/ru/branches/" class="submenu-additional-links__link">Офисы, банкоматы и терминалы</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_feedback"><a href="/ru/obratnaja-svjaz/" class="submenu-additional-links__link">Обратная связь</a></li>
+        <li class="submenu-additional-links__item submenu-additional-links__item_english"><a href="/en/" class="submenu-additional-links__link">English</a></li>
+    </ul>
+</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				<div id="header-phone">
+					<div id="header-phone-inner" class="pragm">
+												<!-- <img src="/images/phones-top-n2.png" style="" alt="8 800 2000000"/> -->
+						<div class="pragm-content">
+							<a href="tel: 8 800 200-99-29">8 800 200-99-29</a>
+							<a href="tel: 8 863 200-00-00">8 863 2-000-000</a>
+						</div>
+						<span style="display:none">bool(true)
+d: 5 h: 23 </span>
+						<!---->
+					</div>
+				</div>
+			   </div>
+			</div>
+            <div id="feedbackWidget">
+                            <feed-back-widget :right-time="false"></feed-back-widget>
+            </div>
+            <script>
+                new Vue({
+                    el: '#feedbackWidget'
+                })
+            </script>
+            <div id="content-wrapper" class=" 
+">
+
+
+				
+
+
+				<div id="content" class="maincol fullwidth">
+											<div id="breadcrumb">
+							<p><a href="/ru/fiz/" title="Частным лицам">Частным лицам</a>&nbsp/&nbsp;<a href="/ru/fiz/kreditovanie/" title="Кредитование">Кредитование</a>&nbsp/&nbsp;<a href="/ru/fiz/kreditovanie/kreditnye-karty/" title="Кредитные карты">Кредитные карты</a>&nbsp/&nbsp;<span>ПАМЯТКА ПО ПОГАШЕНИЮ КРЕДИТОВ ПО БАНКОВСКИМ КАРТАМ</span></p>						</div>
+											<div style="clear:both;">
+
+<script type='text/javascript'>
+    window.getRegion = function () {
+        return 'Ростовская область';
+    }
+</script>
+		<div class="useful-info">
+<h4>Полезная информация</h4>
+<ul>
+<li><a href="/ru/online-zayavki/kreditovanie-fizicheskih-lic">Online-заявка</a></li>
+<li><a href="/files/services/fiz/pdf/DebtorGuide.pdf">Памятка заёмщика</a></li>
+<li><a href="/files/services/fiz/pdf/parost.pdf">Информация Банка России</a></li>
+<li><a href="/ru/fiz/kreditovanie/tarif">Обслуживание кредитов</a></li>
+</ul>
+</div><h1>ПАМЯТКА ПО ПОГАШЕНИЮ КРЕДИТОВ ПО БАНКОВСКИМ КАРТАМ</h1>
+<p>Уважаемый Клиент, Вы получили доступ к кредитным ресурсам крупнейшего  регионального Банка на Юге России. Банк "Центр-инвест" предлагает  десятки кредитных программ на приобретение товаров длительного пользования,  лечение, обучение, приобретение автомобилей и улучшение жилищных условий.  Получив кредит в Банке "Центр-инвест", у Вас появились новые  обязательства - <strong>в соответствии с условиями договора вносить очередной платеж  по кредиту.</strong><br>
+    <br>
+    <strong>Для правильного погашения кредита просим обратить внимание на следующие  советы:</strong> </p>
+<ol start="1" type="1">
+  <li>Пополнить счет Вашей банковской       карты для погашения кредита можете Вы лично, либо иное лицо по Вашему       поручению. </li>
+  <li>Для осуществления платежа по       кредиту <strong>обязательно</strong> понадобятся следующие документы: </li>
+  <ul type="circle">
+    <li>при        пополнении рублевого счета - документ, удостоверяющий личность: паспорт        гражданина РФ, заграничный паспорт, паспорт моряка или действующий        военный билет. </li>
+    <li>при        пополнении счета открытого в долларах США, либо в ЕВРО Вашим доверенным        лицом, ему дополнительно потребуется нотариально заверенная доверенность. </li>
+  </ul>
+  <li>Узнать сумму для осуществления       очередного платежа по кредиту и дату, до которой необходимо совершить       данный платеж, Вы можете: </li>
+  <ul type="circle">
+    <li>в банкоматах        ПАО КБ "Центр-инвест" через операцию "Справка по кредитной        задолженности" (справка платная, плата взимается в соответствии с        действующими тарифами Банка). ОБРАТИТЕ ВНИМАНИЕ, что данные в справке        корректны только на дату ее составления и не учитывают        операции, совершенные Вами в день ее формирования! Для полного погашения        револьверного кредита (в размере большем, чем Ваш ежемесячный платеж)        необходимо обратиться в отделение ПАО КБ "Центр-инвест".</li>
+    <li>через        Интернет-Банк, если Вы подключали данный сервис.</li>
+    <li>в отделении        ПАО КБ "Центр-инвест" лично у кредитного Консультанта, либо по        телефонам: 250-99-04, 264-40-86. Информация будет предоставлена только        при наличии по Вашему договору кодового слова. </li>
+  </ul>
+  <li>Если Вы совершаете погашение       задолженности не через кассу головного отделения, то средства поступят в       счет погашения не в день совершения Вами операции пополнения счета.       Поэтому в таких случаях необходимо вносить сумму большую, чем указано в       справке. Точную сумму Вы можете узнать у кредитного Консультанта, либо по       телефонам: 250-99-04, 264-40-86. Информация будет предоставлена только при       наличии по Вашему договору кодового слова.</li>
+  <li>Если Вы совершаете погашение       задолженности непосредственно в дату платежа, то производить оплату       необходимо ТОЛЬКО через кассу головного отделения ПАО КБ «Центр-инвест» и       БЕЗ использования пластиковой карты.</li>
+</ol>
+<h3>СПОСОБЫ И ПОРЯДОК ОПЛАТЫ</h3>
+<p><strong>1.  Наличными денежными средствами</strong></p>
+<p><strong><u>- в головном отделении ПАО КБ "Центр-инвест"</u></strong> (г.Ростов-на-Дону, пр.Соколова,62).<br>
+  Для этого Вам необходимо обратиться в отдел кредитования по пластиковым картам,  где Вам выпишут квитанцию на погашение (квитанция действительна только один  день), после чего осуществить пополнение карты.<br>
+  Для получения квитанции и пополнения банковской карты Вы или иное лицо,  осуществляющее пополнение Вашего счета обязательно должны иметь при себе  документ, удостоверяющий личность.<br>
+  Внести платеж по кредиту в головном офисе можно до даты очередного платежа  включительно. Режим работы операционного зала головного Банка:<br>
+  Пн.-Пт. 9:00 - 19:00 (последние два рабочих дня месяца - до 18:00)<br>
+  Сб. 9:00 - 16:00 (последние два рабочих дня месяца - до 15:00)</p>
+<p>  <strong><u>- через головное отделение в режиме работы круглосуточного офиса  "24 часа"</u></strong> (г.Ростов-на-Дону, пр.Соколова, 62, вход с угла).<br>
+  Пополнение необходимо совершить не позднее, чем за 2 рабочих дня до даты  очередного платежа по кредиту (суббота и воскресенье считаются не рабочими  днями).<br>
+  Обратите внимание, что для того, чтобы произошло погашение кредита, <strong>снятия  по карте можно производить только на следующий рабочий день</strong> после  пополнения счета!<br>
+  Пополнение в круглосуточном офисе "24 часа" может осуществляться  только держателем банковской карты. Для пополнения необходимо иметь <strong>банковскую  карту</strong> и <strong>удостоверение личности.</strong><br>
+  Режим работы ночной кассы:<br>
+  Пн.-Пт. 19:00 - 8:30 (последние два рабочих дня месяца - до 21:00), перерыв с  24:00 до 3:00 <br>
+  Cб. 16:00 - 8:30 (последние два рабочих дня месяца - до 21:00), перерыв с 24:00  до 3:00 <br>
+  Вc. 9:00 - 8:30 (следующего дня) перерыв с 13:30 до 14:00 и с 17:00 до 17.30, с  24:00 до 3:00</p>
+<p>  <strong><u>- в отделениях ПАО КБ "Центр-инвест"</u></strong><br>
+  Пополнение необходимо совершить не позднее, чем за 2 рабочих дня до даты  очередного платежа по кредиту (суббота и воскресенье считаются не рабочими  днями).<br>
+  Обратите внимание, что для того, чтобы произошло погашение кредита, <strong>снятие  по карте можно производить только на следующий рабочий</strong> день после  пополнения счета!<br>
+  Для пополнения карты в отделении ПАО КБ "Центр-инвест" необходимо  иметь <strong>банковские реквизиты карты</strong> и <strong>удостоверение личности.</strong><br>
+  Если карту пополняет владелец счета, то вместо реквизитов можно предоставить  банковскую карту.<br>
+  Список отделений Банка и режим их работы, в Приложении №1.</p>
+<p>  <strong><u>- в отделениях сторонних Банков</u></strong> Перевод необходимо совершить  не позднее, чем за 4 рабочих дня до даты очередного платежа по кредиту (суббота  и воскресенье считаются не рабочими днями).<br>
+  Для пополнения счета Вам, либо Вашему доверенному лицу необходимо будет иметь <strong>банковские  реквизиты карты</strong> и <strong>удостоверение личности.</strong><br>
+  Если у Вас оформлен кредит в виде "овердрафта" (с полным погашением 1  раз в 90 дней), то Вы можете снимать кредитные средства не ранее, чем через 4  рабочих дня после осуществления перевода через отделение стороннего Банка,  убедившись в том, что произошло полное погашение кредита и процентов.<br>
+  Обратите внимание, что при данном способе пополнения сторонний Банк, как  правило, взимает комиссию за перевод!</p>
+<p><strong> - <u>через банкоматы и платежные  терминалы ПАО КБ «Центр-инвест» с функцией приема наличных.</u></strong> Для этого  Вам понадобится Ваша банковская карта, по которой необходимо погасить кредит.  Пополнение счета необходимо совершить не позднее, чем за 2 рабочих дня до даты  очередного платежа по кредиту (суббота и воскресенье считаются не рабочими  днями).<br>
+  Обратите внимание, что для того, чтобы произошло погашение кредита, <strong>снятия  по карте можно производить только на следующий рабочий день</strong> после пополнения счета!<br>
+  <br>
+  <strong>2.  Безналичным перечислением</strong></p>
+<p>
+  <strong><u>- с расчетных счетов, открытых в Банке "Центр-инвест", либо  в любом другом Банке</u></strong><br>
+  Перевод необходимо совершить не позднее, чем за 3 рабочих дня до даты  очередного платежа по кредиту (суббота и воскресенье считаются не рабочими  днями).<br>
+  Для осуществления безналичного перечисления необходимо сообщить отправителю  полные реквизиты Вашего карточного счета.<br>
+  Отправителю необходимо оформить по реквизитам соответствующее платежное  поручение. <br>
+  Если у Вас оформлен кредит в виде "овердрафта" (с полным погашением 1  раз в 90 дней), то Вы можете снимать кредитные средства не ранее, чем через 3  рабочих дня после осуществления безналичного перечисления, убедившись в том,  что произошло полное погашение кредита и процентов.</p>
+<p>  <strong><u>- через Интернет-Банк ПАО КБ  «Центр-инвест»</u> </strong>Если у Вас открыто несколько карточных счетов в Банке  «Центр-инвест» и подключен сервис Интернет-Банк, то Вы можете перевести  средства с одного карточного счета на другой с целью погашения кредитной  задолженности. Перевод необходимо совершить не позднее, чем за 2 рабочих дня до  даты очередного платежа по кредиту (суббота и воскресенье считаются не рабочими  днями).</p>
+<p> Обратите внимание, что для того, чтобы произошло погашение кредита, <strong>снятия  по карте можно производить только на следующий рабочий день</strong> после  пополнения счета!<br>
+  <br>
+  Напоминаем также, что с 1 июня 2005 г. вступил в силу Федеральный закон  "О кредитных историях" №218-ФЗ от 30.12.2004 г., в соответствии с  которым, Банк обязан сообщать в Бюро кредитных историй обо всех случаях нарушения  платежной дисциплины. Пожалуйста, будьте внимательны, заботьтесь о своей  репутации добросовестного заемщика. Если объективные обстоятельства не  позволяют Вам оплатить в срок обязательства по кредиту, заблаговременно  сообщите об этом сотруднику Управления розничного кредитования.<br>
+  Вместе мы найдем выход из сложившейся ситуации.</p>
+<p><b>&nbsp;</b></p>
+<br><br>
+
+										</div>
+														</div>
+				            </div>
+            
+        <div class="footer">
+            <div class="wrapper">
+                <div class="footer__row">
+                    <div class="footer__phones phones-block">
+                        <div class="phones-block__item phones-block__item_information-service">
+                            <div class="phones-block__label">Информационная служба</div>
+                            <a href="tel:88002009929" class="phones-block__phone">8 800 200-99-29</a>
+                        </div>
+                        <div class="phones-block__item phones-block__item_technical-support">
+                            <div class="phones-block__label">Техническая поддержка банковских карт</div>
+                            <a href="tel:88002009109" class="phones-block__phone">8 800 200-91-09</a>
+                        </div>
+                        <div class="phones-block__item phones-block__item_world-calls">
+                            <div class="phones-block__label">Для звонков со всего мира</div>
+                            <a href="tel:+78632000000" class="phones-block__phone">+7 863 2-000-000</a>
+                        </div>
+                    </div>
+                    <div class="footer__links links-block">
+                        <div class="links-block__wr links-block__wr_phones">
+                            <div class="links-block__label"><span class="links-block__span">Все телефоны <i aria-hidden="true" class="fa fa-arrow-down"></i></span></div>
+                            <div class="links-block__modal links-block__modal_first links-modal">
+                                <div class="links-modal__header">
+                                Уважаемые клиенты!
+                                <div class="links-modal__close-button"></div>
+                                </div>
+                                <div class="links-modal__content">
+                                    <h4 class="links-modal__h4">Телефон информационной службы:</h4>
+                                    <ul class="links-modal__list">
+                                        <li class="links-modal__list-item"><a href="tel:+78632000000">8(863) 200-00-00</a></li>
+                                        <li class="links-modal__list-item"><a href="tel:+78002009929">8(800) 200-99-29</a></li>
+                                    </ul>
+                                    <h4 class="links-modal__h4 links-modal__h4_marign-top">Сотрудники банка «Центр-инвест» могут звонить Вам со следующих номеров:</h4>
+                                    <ul class="links-modal__list">
+                                        <li class="links-modal__list-item">8(863) 250-99-00</li>
+                                        <li class="links-modal__list-item">8(928) 127-54-96</li>
+                                        <li class="links-modal__list-item">8(928) 108-97-27</li>
+                                        <li class="links-modal__list-item">8(928) 108-97-28</li>
+                                        <li class="links-modal__list-item">8(928) 161-61-12</li>
+                                        <li class="links-modal__list-item">8(928) 213-40-43</li>
+                                        <li class="links-modal__list-item">8(905) 430-20-00</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="links-block__wr links-block__wr_press">
+                            <div class="links-block__label"><span class="links-block__span">Пресс-служба <i aria-hidden="true" class="fa fa-arrow-down"></i></span></div>
+                            <div class="links-block__modal links-modal">
+                                <div class="links-modal__header">
+                                Дорогие друзья!
+                                <div class="links-modal__close-button"></div>
+                                </div>
+                                <div class="links-modal__content">
+                                    <div class="links-modal__text">
+                                    Пресс-служба банка «Центр-инвест» — это дружная команда профессионалов, которая готова ответить на любой вопрос о деятельности банка, оперативно предоставить актуальную и достоверную информацию, а также обеспечить комментарии от первых лиц и экспертов банка.
+                                    </div>
+                                    <div class="links-modal__text">
+                                    Пишите, звоните — «Центр-инвест» всегда на связи!
+                                    </div>
+                                    <div class="links-modal__text">
+                                        <strong>(863) 267-99-88</strong>
+                                    </div>
+                                    <div class="links-modal__text">
+                                        <strong><a href="mailto:dobro@centrinvest.ru">dobro@centrinvest.ru</a></strong>
+                                    </div>
+                                    <div class="links-modal__text">
+                                        <a href="/ru/about/news/">Новости</a>
+                                    </div>
+                                    <div class="links-modal__text">
+                                        <a href="/files/CI_objects.eps">Логотипы (*.eps)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="links-block__wr">
+                            <a href="/ru/about/career/" class="links-block__link links-block__link_dotted">Карьера</a>
+                        </div>
+                    </div>
+                    <div class="footer__icons icons-block">
+                        <div class="icons-block__social-row">
+                            <a target="_blank" rel="noopener noreferrer nofollow" href="https://vk.com/centrinvest" class="icons-block__link icons-block__link_vk"></a> 
+                            <a target="_blank" rel="noopener noreferrer nofollow" href="http://www.facebook.com/centrinvest" class="icons-block__link icons-block__link_facebook"></a> 
+                            <a target="_blank" rel="noopener noreferrer nofollow" href="https://twitter.com/centrinvest" class="icons-block__link icons-block__link_twitter"></a> 
+                            <a target="_blank" rel="noopener noreferrer nofollow" href="http://instagram.com/centrinvest" class="icons-block__link icons-block__link_instagram"></a> 
+                            <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.youtube.com/centrinvest" class="icons-block__link icons-block__link_youtube"></a> 
+                            <a target="_blank" rel="noopener noreferrer nofollow" href="https://ok.ru/centrinvest.bank" class="icons-block__link icons-block__link_ok"></a>
+                        </div>
+                        <div class="icons-block__apps-row">
+                            <a target="_blank" rel="noopener noreferrer nofollow" href="https://itunes.apple.com/ru/app/мобильный-банк-центр-инвест/id1329640879?mt=8" class="icons-block__apps icons-block__apps_app-store"></a> 
+                            <a target="_blank" rel="noopener noreferrer nofollow" href="https://play.google.com/store/apps/details?id=ru.centrinvest.mobilebanking&hl=ru" class="icons-block__apps icons-block__apps_google-pay"></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+		<div id="copyright">
+				<div id="copyright" class="copyright">
+    <div class="wrapper">
+        <div class="copyright__text">
+            <a class="copyright__link" href="/ru/investors/pub-info/deposits">Информация о максимальных процентных
+                ставках
+                по вкладам физических
+                лиц</a>,
+            <a class="copyright__link" href="/ru/about/reports/">Раскрытие информации</a>,
+            <a class="copyright__link" href="/ru/strakhovaniye_vkladov">Страхование вкладов</a>,
+            <a class="copyright__link" href="/files/about/requisites.pdf" target="_blank"
+                rel="noopener noreferrer">Реквизиты</a>
+        </div>
+        <div class="copyright__text">
+            <a class="copyright__link" href="http://e-disclosure.ru/portal/company.aspx?id=3018" target="_blank"
+                rel="noopener noreferrer nofollow">Раскрытие
+                информации
+                на сайте ИА Интерфакс</a>,
+            <a class="copyright__link" href="https://cbr.ru/banking_sector/credit/coinfo/?id=600000026" target="_blank"
+                rel="noopener noreferrer nofollow">Информация о лицах, под контролем либо значительным влиянием которых находится банк</a>
+        </div>
+        <div class="copyright__text">
+            <a class="copyright__link" href="/images/about/license.jpg" onclick="return hs.expand(this)">Генеральная
+                лицензия Банка России № 2225 от 26 августа
+                2016 г.</a>
+            <a class="copyright__link" href="/ru/nadzorniy_organ.php">Надзорный орган </a>
+        </div>
+        <div class="copyright__text">Уставный капитал &mdash; 933 567 570,00 руб., дата изменения величины уставного
+            капитала: 29.10.2015
+        </div>
+        <div class="copyright__text">
+            <a class="copyright__link" href="/agreement.html">Соглашение об использовании
+                информации на
+                сайте,&nbsp;
+            </a>
+            <a class="copyright__link" href="/processing_agreement.html"> Положение об&nbsp;обработке
+                персональных данных ПАО КБ&nbsp;&laquo;Центр-инвест&raquo;</a>
+        </div>
+        <div class="copyright__text">Copyright <strong>&copy;</strong> 1997-2020, ПАО КБ
+            Центр-инвест,
+            г. Ростов-на-Дону, пр.
+            Соколова, 62</div>
+        <div class="copyright__text">Design&amp;Support <strong>&copy;</strong>
+            <!--noindex--><a target="_blank" class="copyright__link" href="http://cinet.ru"
+                rel="nofollow noopener noreferrer">«Центр-Интернет»</a>
+            <!--/noindex-->
+        </div>
+    </div>
+</div>			</div>
+	</div>
+
+
+	<div id="back-to-top"></div>
+	
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter4814476 = new Ya.Metrika({
+                    id: 4814476,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
+                });
+            } catch (e) {}
+        });
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () {
+                n.parentNode.insertBefore(s, n);
+            };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+</script> <noscript>
+    <div><img src="https://mc.yandex.ru/watch/4814476" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+<!--LiveInternet counter-->
+<script type="text/javascript">
+    document.write("<a style='display:none' href='http://www.liveinternet.ru/click' " +
+        "target=_blank><img src='//counter.yadro.ru/hit?t44.1;r" +
+        escape(document.referrer) + ((typeof (screen) == "undefined") ? "" :
+            ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+        ";" + Math.random() +
+        "' alt='' title='LiveInternet' " +
+        "border='0' width='31' height='31'><\/a>")
+</script>
+<!--/LiveInternet-->
+
+<!-- http://www.LiveZilla.net Tracking Code -->
+			<!-- LiveZilla Chat Button Link Code (ALWAYS PLACE IN BODY ELEMENT) -->
+<!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) -->
+<div id="livezilla_tracking" style="display:none"></div>
+<script type="text/javascript">
+$(window).ready(function(){
+	var script = document.createElement("script");
+	script.async=true;
+	script.type="text/javascript";
+	var src = "https://lz.centrinvest.ru/livezilla/server.php?a=c8814&request=track&output=jcrpt&hcgs=MQ__&htgs=MQ__&fbpos=12&fbml=0&fbmt=0&fbmr=0&fbmb=0&fbw=48&fbh=236&fboo=1&nse="+Math.random();
+	script.src=src;
+	setTimeout(function(){document.getElementById('livezilla_tracking').appendChild(script);},1);
+});
+</script>
+<noscript>
+<img src="https://lz.centrinvest.ru/livezilla/server.php?a=c8814&amp;request=track&amp;output=nojcrpt&amp;hcgs=MQ__&amp;htgs=MQ__" width="0" height="0" style="visibility:hidden;" alt="">
+</noscript>
+<!-- http://www.LiveZilla.net Tracking Code -->
+<div style="display:none;">
+<a href="javascript:void(window.open('https://lz.centrinvest.ru/livezilla/chat.php?a=125a0&amp;hcgs=MQ__&amp;htgs=MQ__','','width=590,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_fl" style="display:none;">
+<img id="chat_button_image" src="https://lz.centrinvest.ru/livezilla/image.php?a=dc6a5&amp;id=1&amp;type=overlay" width="48" height="236" style="border:0px;" alt="LiveZilla Live Chat Software">
+</a>
+</div><!-- http://www.LiveZilla.net Chat Button Link Code -->	
+	<!-- 
+	 -->
+
+
+
+	<script>
+        document.addEventListener('DOMContentLoaded', function () {
+			if (window.location.pathname.indexOf('vklady') !== -1) {
+				var script1 = document.createElement('script');
+				script1.setAttribute('src', '/js/jsnlog.min.js');
+				var script2 = document.createElement('script');
+				script2.setAttribute('src', '/js/jsnlogger.cibsite.js');
+				setTimeout(function () {
+					document.querySelector('head').insertBefore(script1 ,document.querySelector('script'));
+					document.querySelector('head').insertBefore(script2 ,document.querySelectorAll('script')[1]);
+				},1000)				
+			}
+        })
+    </script>
+
+
+
+
+
+
+	<script src="/js/highslide-full.packed.js" async=""></script>
+	<!-- <script src="/js/include/smartbanner.min.js"></script> -->
+	<script>
+		$("#b_container").nextAll('.note,.hotel-search__logo').hide();
+		$(window).load(function(){
+			if ($("#b_container iframe").length > 0){ 
+				  $("#b_container").nextAll('.note,.hotel-search__logo').show()
+			}
+			
+			hs.graphicsDir = '/images/hs-graphics/';
+			//hs.outlineType = 'rounded-white';
+		});
+	</script>
+
+	<script>
+	  $(document).ready(function () {
+	      $('.dropdown_item > h2').click(function (event) {
+	          $(this).next(".dropdown_item-content").slideToggle();
+	          $(this).toggleClass('open');
+	          event.stopPropagation();
+	      });
+	  });
+	</script>
+
+
+	<script>
+		let region = document.getElementById('region-mob')
+
+		window.onload= function() {
+			region.onclick = function() {
+				openbox('regions-wrap');
+				return false;
+			};
+		};
+		function openbox(id, toggler) {
+			var div = document.getElementById(id);
+			if(div.style.display == 'block') {
+				div.style.display = 'none';
+			}
+			else {
+				div.style.display = 'block';
+			}
+		}
+
+	</script>
+
+	<script src="/js/smart-app-banner.js"></script>
+	<script>
+		new SmartBanner({
+			daysHidden: 15,
+			daysReminder: 90,
+			appStoreLanguage: 'ru',
+			title: 'Мобильный банк "Центр-инвест" ',
+			author: '"Центр-инвест"',
+			button: 'открыть',
+			store: {
+				ios: 'App Store',
+				android: 'Google Play'
+			},
+			price: {
+				ios: 'Бесплатно',
+				android: 'Бесплатно'
+			}
+      });
+	</script>
+
+	<script>
+		new Vue({
+			el: "#headerArea",
+			data: function (){
+				return {
+					btnActive: false,
+				}
+			},
+			methods: {
+				toggleMenu: function() {
+					this.btnActive === true ?
+		                this.btnActive = false :
+		                this.btnActive = true
+				},
+				heightFix: function() {
+					/* исправление бага с недостающей высотой */
+					let h = parseInt(document.getElementById('navbar').style.maxHeight.slice(0, -2)) + 8 + "px"
+					document.getElementById('navbar').style.maxHeight = h;
+				},
+				heightChange: function() {
+					/* исправление бага с корявой высотой */
+					document.querySelectorAll('.owl-stage-outer')[0].style.height = getComputedStyle(document.querySelectorAll('.owl-item.active')[0]).height
+				},
+				bodyHidden: function() {
+					this.btnActive === true ?
+						document.body.classList.add('ov--hidden') :
+						document.body.classList.remove('ov--hidden')
+				},
+				scroll: function() {
+					let nav = document.querySelector('.navbar.navbar-default.navbar-fixed-top'),
+						scrollPos = 0;
+
+					document.body.addEventListener('scroll', function() {
+						let sc = document.body.scrollTop;
+						let has = document.getElementById('navbar').classList.contains('in');
+						if(document.getElementsByClassName('smartbanner').length > 0) {
+							if(sc > 84) {
+								if(!has) {
+									nav.classList.remove('rel')
+									if(sc > scrollPos) {
+										nav.classList.add('navbar_hide')
+									} else {
+										nav.classList.remove('navbar_hide')
+									}
+
+									scrollPos = sc;
+								}
+							} else{
+								nav.classList.add('rel')
+							}
+						} else{
+							nav.classList.remove('rel')
+							if(!has) {
+								sc > scrollPos ?
+									nav.classList.add('navbar_hide') :
+									nav.classList.remove('navbar_hide')
+
+								scrollPos = sc;
+							}
+						}
+					});
+				}
+			},
+			watch: {
+				'btnActive': function() {
+					this.heightFix();
+					this.bodyHidden();
+
+					setTimeout( () => {
+						this.heightChange()
+					}, 200)
+				}
+			},
+			mounted: function(){
+		        // this.scroll();
+		    }
+		});
+	</script>
+
+	<!-- Прокрутка мобильного меню -->
+	<script src="/js/OwlCarousel/dist/owl.carousel.min.js" ></script>
+	<script async>
+	  	$(document).ready(function(){
+			var last_ind = 0;
+			var owl = $(".owl-menu");
+			owl.on('initialized.owl.carousel', function(){
+			    $(".owl-stage-outer").css("height", $(".owl-item.active").css("height"));
+
+                var curr = "b-menu--tabs--item---current";
+			    var curr_sel = "." + curr;
+			    var ind = $(curr_sel).index();
+			    if (ind == 1){
+			        $(".b-menu--tabs--inside").css("left", "-50px");
+			    } else if (ind == 2){
+			        $(".b-menu--tabs--inside").css("left", "-200px");
+			    } else if(ind == 3){
+		                $(".b-menu--tabs--inside").css("left", "-200px");
+			    }
+				else{
+		                $(".b-menu--tabs--inside").css("left", "0");
+			    }
+			    last_ind = ind;
+			    $(".owl-stage-outer").css("height", $(".owl-item.active").css("height"));
+			});
+			$(".b-menu--tabs--item").click(function(){
+			  owl.trigger("to.owl.carousel", $(this).index());
+			});
+			owl.owlCarousel({
+			  items:1
+			});
+			owl.on('translated.owl.carousel', function(event) {
+				var curr = "b-menu--tabs--item---current";
+				var curr_sel = "." + curr;
+				var ind = event.item.index;
+				$(curr_sel).toggleClass(curr);
+				$(".b-menu--tabs--item:nth-child(" + (ind+1) + ')').toggleClass(curr)
+				if (ind == 1){
+				    $(".b-menu--tabs--inside").css("left", "-50px");
+				} else if (ind == 2){
+					$(".b-menu--tabs--inside").css("left", "-200px");
+				} else if (ind == 3){
+				    $(".b-menu--tabs--inside").css("left", "-200px");
+				}
+				else{
+				    $(".b-menu--tabs--inside").css("left", "0");
+				}
+				last_ind = ind;
+				$(".owl-stage-outer").css("height", $(".owl-item.active").css("height"));
+			});
+            owl.trigger("to.owl.carousel", last_ind);
+	  	});
+	</script>
+
+	<script>
+		new Vue({ el: '#footer' })
+	</script>
+</body>
+</html>
 
